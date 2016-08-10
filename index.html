@@ -33,8 +33,19 @@
                   </ul>
             </nav>
             <div class="user-block">
-                <input type="button" value="поиск">
+                <input type="button" value="поиск"><!--<input type="image" src="http://placehold.it/150x100" alt="Поиск"> -->
+                <input type="text" placeholder="Что ищем?">
                 <a class="login" href="#">Вход</a>
+                
+                <!--Форма входа -->
+                <form class="form-login">
+                    <input type="email" placeholder="Электронная почта">
+                    <input type="password" placeholder="Пароль">
+                    <input type="submit" value="Войти">
+                    <a href="#">Забыли пароль</a>
+                    <a href="#">Новая регистрация</a>
+                </form>
+                
                 <a class="shopping-cart" href="#">Корзина</a>
             </div>
             <div class="shedule">
@@ -46,13 +57,37 @@
     <main>
         <div class="container">
             <div id="carousel">
+                <h2>Крем-брюле и пломбир с малиновым джемом</h2>
+                <a href="#">Давайте оба!</a>   
             </div>
-            <div class="col-2"></div>
-            <div class="col-2"></div>
-            <div class="col-4"></div>
-            <div class="col-4"></div>
-            <div class="col-4"></div>
-            <div class="col-4"></div>
+            <div class="col-2">
+                <h3>Малинка даром!</h3>
+                <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+                <a href="#">Хочу варенье!</a> 
+            </div>
+            <div class="col-2">
+                <h3>Шоколадки даром!</h3>
+                <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки  абсолютно бесплатно.</p>
+                <a href="#">Хочу шоколадки!</a> 
+            </div>
+            <div class="col-4">
+                <img src="http://placehold.it/150x100" width="150" height="100">
+                <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+                
+            </div>
+            <div class="col-4">
+                <img src="http://placehold.it/150x100" width="150" height="100">
+                <a href="#">Сливочно-кофейное с кусочками шоколада</a>
+            </div>
+            <div class="col-4">
+                <img src="http://placehold.it/150x100" width="150" height="100">
+                <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+            </div>
+
+            <div class="col-4">
+                <img src="http://placehold.it/150x100" width="150" height="100">
+                <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+            </div>
             <article class="description">
                 <b>Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</b>
                 <section class="description-item">
@@ -75,42 +110,39 @@
             </article>
             
             
-                <article class="col-2 blog">
-                    Новое в нашем блоге
-                    <a href="#">10  способов сервировки фруктовых щербетов к столу</a>
-                </article>
+            <article class="col-2 blog">
+                Новое в нашем блоге
+                <a href="#">10  способов сервировки фруктовых щербетов к столу</a>
+            </article>
             
             
-                <section class="col-2 subscribe">
-                    <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не          спамить и не слать всякой не нужной ерунды. Честно =) 
-                    </p>
-                    <form>
-                        <input type="email" placeholder="Электронная почта">
+            <section class="col-2 subscribe">
+                <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не          спамить и не слать всякой не нужной ерунды. Честно =) 
+                </p>
+                <form>
+                    <input type="email" placeholder="Электронная почта">
+                    <button type="submit">Отправить</button>
+                </form>
+
+            </section>
+            <section class="map">
+                <section class="contacts">
+                    <p>Адрес главного офиса и офлайн магазина:<br>
+                    ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
+                    <p>Для заказов по телефону:<br>
+                    8 812 450-25-25 (с 10 до 20 ежедневно)</p>
+
+                    <a href="#">Форма обратной связи</a>
+                    <!--Форма обратной связи -->
+                    <form class="feedback">
+                        Мы обязательно вам ответим!
+                        <input type="text" placeholder="Как вас зовут">
+                        <input type="email" placeholder="Ваша почта для ответа">
+                        <textarea cols="50" rows="6" placeholder="Напишите что-нибудь..."></textarea>
                         <button type="submit">Отправить</button>
                     </form>
-                
                 </section>
-                <section class="map">
-                    <section class="contacts">
-                        <p>Адрес главного офиса и офлайн магазина:<br>
-                        ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
-                        <p>Для заказов по телефону:<br>
-                        8 812 450-25-25 (с 10 до 20 ежедневно)</p>
-                        
-                        <a href="#">Форма обратной связи</a>
-                        
-                        <form class="feedback">
-                            Мы обязательно вам ответим!
-                            <input type="text" placeholder="Как вас зовут">
-                            <input type="email" placeholder="Ваша почта для ответа">
-                            <textarea cols="50" rows="6" placeholder="Напишите что-нибудь..."></textarea>
-                            <button type="submit">Отправить</button>
-                        
-                        </form>
-                        
-                        
-                    </section>
-                </section>
+            </section>
         </div>
     </main>
     <footer class="main-footer">
@@ -130,11 +162,9 @@
               <a href="#">Экологические стандарты</a>
           </secion>
           <secion class="copyright"></secion>
-          
+      </div> 
           
           
     </footer>
-
-
   </body>
 </html>
