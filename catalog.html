@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
       <meta charset="utf-8">
+      <link href="css/style.css" rel="stylesheet">
       <title>HTML Academy: Глейси</title>
   </head>
   <body>
@@ -126,110 +127,74 @@
                         <option>по жирности </option>
                     </select>
                 </label>
-                <label>
-                    <input type="range">
+                <div class="range">
+                    <div class="line"></div>
+                    <div class="point point1"></div>
+                    <div class="point point2"></div>
                 
-                </label>
+                </div>
+                
                 <label><input type="radio" name="richness">0%</label>
                 <label><input type="radio" name="richness">до 10%</label>
                 <label><input type="radio" name="richness">до 30%</label>
                 <label><input type="radio" name="richness">выше 30%</label>
-                
+                Наполнители
                 <label>
-                        <input type="checkbox" checked> шоколадные
-                    </label>
-                    <label>
-                        <input type="checkbox"> сахарные присыпки
-                    </label>
-                    <label>
-                        <input type="checkbox"> фрукты
-                    </label>
-                    <label>
-                        <input type="checkbox" checked> сиропы
-                    </label>
-                    <label>
-                        <input type="checkbox"> джемы
-                    </label>
-                    
-
-                    <h2>Группы товаров:</h2>
-                    <label>
-                        <input type="radio" name="category" value="shaving">бритвенные принадлежности
-                    </label>
-                    <label>
-                        <input type="radio" name="category" value="care">средства для ухода
-                    </label>
-                    <label>
-                        <input type="radio" name="category" value="accessory">аксессуары
-                    </label>
-                
-               
-                
+                    <input type="checkbox" checked> шоколадные
+                </label>
+                <label>
+                    <input type="checkbox"> сахарные присыпки
+                </label>
+                <label>
+                    <input type="checkbox"> фрукты
+                </label>
+                <label>
+                    <input type="checkbox" checked> сиропы
+                </label>
+                <label>
+                    <input type="checkbox"> джемы
+                </label>
+                <input type="submit" value="Применить">  
             </form>
-            <div class="col-2"></div>
-            <div class="col-2"></div>
-            <div class="col-4"></div>
-            <div class="col-4"></div>
-            <div class="col-4"></div>
-            <div class="col-4"></div>
-            <article class="description">
-                <b>Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</b>
-                <section class="description-item">
-                    <img src="http://placehold.it/150x100" width="30" height="20">
-                    <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных      временем технологий.</p>
-                </section>
-                <section class="description-item">
-                    <img src="http://placehold.it/150x100" width="30" height="20">
-                    <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и `  добавки произведены из натурального, экологически чистого сырья.</p>
-                </section>
-                <section class="description-item">
-                    <img src="http://placehold.it/150x100" width="30" height="20">
-                    <p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает              долговременное сотрудничество.</p>
-                
-                </section>
-                <section class="description-item">
-                    <img src="http://placehold.it/150x100" width="30" height="20">
-                    <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в        пути и позволяет сохранить превосходный вкус.</p>
-                </section>
-            </article>
+            
+
+            <div class="col-4">
+                <img src="http://placehold.it/150x100" width="150" height="100">
+                <div class="price">
+                    <span>380Р</span>/кг
+                </div>
+                <span>Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
+                <a href="#">Быстрый просмотр</a>
+            </div>
+            <div class="col-4">
+                <img src="http://placehold.it/150x100" width="150" height="100">
+                <div class="price">
+                    <span>380Р</span>/кг
+                </div>
+                <span>Сливочно-кофейное с кусочками шоколада</span>
+                <a href="#">Быстрый просмотр</a>
+            </div>
+            <div class="col-4">
+                <img src="http://placehold.it/150x100" width="150" height="100">
+                <div class="price">
+                    <span>380Р</span>/кг
+                </div>
+                <span>Сливочно-клубничное с присыпкой из белого шоколада</span>
+                <a href="#">Быстрый просмотр</a>
+            </div>
+            <div class="col-4">
+                <img src="http://placehold.it/150x100" width="150" height="100">
+                <div class="price">
+                    <span>380Р</span>/кг
+                </div>
+                <span>Сливочное крем-брюле с карамельной подливкой</span>
+                <a href="#">Быстрый просмотр</a>
+            </div>
+           
             
             
-                <article class="col-2 blog">
-                    Новое в нашем блоге
-                    <a href="#">10  способов сервировки фруктовых щербетов к столу</a>
-                </article>
-            
-            
-                <section class="col-2 subscribe">
-                    <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не          спамить и не слать всякой не нужной ерунды. Честно =) 
-                    </p>
-                    <form>
-                        <input type="email" placeholder="Электронная почта">
-                        <button type="submit">Отправить</button>
-                    </form>
-                
-                </section>
-                <section class="map">
-                    <section class="contacts">
-                        <p>Адрес главного офиса и офлайн магазина:<br>
-                        ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
-                        <p>Для заказов по телефону:<br>
-                        8 812 450-25-25 (с 10 до 20 ежедневно)</p>
-                        
-                        <a href="#">Форма обратной связи</a>
-                        
-                        <form class="feedback">
-                            Мы обязательно вам ответим!
-                            <input type="text" placeholder="Как вас зовут">
-                            <input type="email" placeholder="Ваша почта для ответа">
-                            <textarea cols="50" rows="6" placeholder="Напишите что-нибудь..."></textarea>
-                            <button type="submit">Отправить</button>
-                        
-                        </form>
-                        
-                        
-                    </section>
-                </section>
+               
+               
         </div>
     </main>
     <footer class="main-footer">

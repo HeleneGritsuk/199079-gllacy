@@ -1,0 +1,32 @@
+.range {
+height:20px;
+border:1px solid black;
+position:relative;
+}
+.line {
+    width:150px;
+    height: 2px;
+    background-image: linear-gradient(#1199ff 30%,#0039a6 50%,#1199ff 70%);
+    background-image:-webkit-linear-gradient(#1199ff 30%,#0039a6 50%,#1199ff 70%);
+    background-image:-moz-linear-gradient(#1199ff 30%,#0039a6 50%,#1199ff 70%).
+    position: absolute;
+    top:5px;
+
+
+}
+.point {
+    width:10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    top:2px;
+    
+
+}
+.point1{
+left:10px;
+}
+.point2{
+left:45px;
+}
