@@ -107,83 +107,73 @@
     </header>
     <main>
         <div class="container">
-            
-            
-            <div class="wrapper">
-                <input type="radio" name="point" id="slide1" checked>
-                <input type="radio" name="point" id="slide2">
-                <input type="radio" name="point" id="slide3">
-                <div class="controls">
-                    <label for="slide1"></label>
-                    <label for="slide2"></label>
-                    <label for="slide3"></label>
+            <div class="top-content">
+                <div class="breadcrumbs">
+                    <ul>
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">Каталог</a></li>
+                        <li><span>Сливочное</span></li>
+                    </ul>
                 </div>
-                <div class="slider">
-                    <div class="slide1">
-                        <img src="http://placehold.it/150x100" width="150" height="100">
-                        <h2>Крем-брюле и пломбир с малиновым джемом</h2>
-                        <a href="#">Давайте оба!</a>  
-                    </div>
+                <h1>Сливочное мороженое</h1>
+            </div>
+            <form class="filter">
+                <label>Сортировка:
+                    <select>
+                        <option>по популярности </option>
+                        <option>сначала недорогие </option>
+                        <option>сначала дорогие </option>
+                        <option>по жирности </option>
+                    </select>
+                </label>
+                <label>
+                    <input type="range">
+                
+                </label>
+                <label><input type="radio" name="richness">0%</label>
+                <label><input type="radio" name="richness">до 10%</label>
+                <label><input type="radio" name="richness">до 30%</label>
+                <label><input type="radio" name="richness">выше 30%</label>
+                
+                <label>
+                        <input type="checkbox" checked> шоколадные
+                    </label>
+                    <label>
+                        <input type="checkbox"> сахарные присыпки
+                    </label>
+                    <label>
+                        <input type="checkbox"> фрукты
+                    </label>
+                    <label>
+                        <input type="checkbox" checked> сиропы
+                    </label>
+                    <label>
+                        <input type="checkbox"> джемы
+                    </label>
                     
-                    <div class="slide2">
-                        <img src="http://placehold.it/150x100" width="150" height="100">
-                        <h2>Пломбир с помадкой и клубничный щербет</h2>
-                        <a href="#">Давайте оба!</a> 
-                    </div>
-                    <div class="slide3">
-                        <img src="http://placehold.it/150x100" width="150" height="100">
-                        <h2>Шоколадный пломбир и лимонный сорбет </h2>
-                        <a href="#">Давайте оба!</a> 
-                    </div>
-                </div>  
-            </div>
-            
-            <div class="col-2 raspberry">
-                <h3>Малинка даром!</h3>
-                <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-                <a href="#">Хочу варенье!</a> 
-            </div>
-            <div class="col-2 chocolate">
-                <h3>Шоколадки даром!</h3>
-                <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки  абсолютно бесплатно.</p>
-                <a href="#">Хочу шоколадки!</a> 
-            </div>
-            <div class="col-4 hit">
-                <img src="http://placehold.it/150x100" width="150" height="100">
-                <div class="price">
-                    <span>380Р</span>/кг
-                </div>
-                <span>Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
-                <a href="#">Быстрый просмотр</a>
-            </div>
-            <div class="col-4 hit">
-                <img src="http://placehold.it/150x100" width="150" height="100">
-                <div class="price">
-                    <span>380Р</span>/кг
-                </div>
-                <span>Сливочно-кофейное с кусочками шоколада</span>
-                <a href="#">Быстрый просмотр</a>
-            </div>
-            <div class="col-4 hit">
-                <img src="http://placehold.it/150x100" width="150" height="100">
-                <div class="price">
-                    <span>380Р</span>/кг
-                </div>
-                <span>Сливочно-клубничное с присыпкой из белого шоколада</span>
-                <a href="#">Быстрый просмотр</a>
-            </div>
 
-            <div class="col-4">
-                <img src="http://placehold.it/150x100" width="150" height="100">
-                <div class="price">
-                    <span>380Р</span>/кг
-                </div>
-                <span>Сливочное крем-брюле с карамельной подливкой</span>
-                <a href="#">Быстрый просмотр</a>
-            </div>
-            
+                    <h2>Группы товаров:</h2>
+                    <label>
+                        <input type="radio" name="category" value="shaving">бритвенные принадлежности
+                    </label>
+                    <label>
+                        <input type="radio" name="category" value="care">средства для ухода
+                    </label>
+                    <label>
+                        <input type="radio" name="category" value="accessory">аксессуары
+                    </label>
+                
+               
+                
+            </form>
+            <div class="col-2"></div>
+            <div class="col-2"></div>
+            <div class="col-4"></div>
+            <div class="col-4"></div>
+            <div class="col-4"></div>
+            <div class="col-4"></div>
             <article class="description">
-                <h1>Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h1>
+                <b>Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</b>
                 <section class="description-item">
                     <img src="http://placehold.it/150x100" width="30" height="20">
                     <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных      временем технологий.</p>
@@ -204,43 +194,43 @@
             </article>
             
             
-            <article class="col-2 blog">
-                Новое в нашем блоге
-                <a href="#">10  способов сервировки фруктовых щербетов к столу</a>
-            </article>
+                <article class="col-2 blog">
+                    Новое в нашем блоге
+                    <a href="#">10  способов сервировки фруктовых щербетов к столу</a>
+                </article>
             
             
-            <section class="col-2 subscribe">
-                <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не          спамить и не слать всякой не нужной ерунды. Честно =) 
-                </p>
-                <form class="form-subscribe">
-                    <input type="email" placeholder="Электронная почта">
-                    <button type="submit">Отправить</button>
-                </form>
-            </section>
-         </div>
-        
-            <section class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.2995112847833!2d30.321988958260512!3d59.938795539054716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1470874092092" width="900" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
-                
-                <section class="contacts">
-                    <p>Адрес главного офиса и офлайн магазина:<br>
-                    ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
-                    <p>Для заказов по телефону:<br>
-                    8 812 450-25-25 (с 10 до 20 ежедневно)</p>
-
-                    <a href="#">Форма обратной связи</a>
-                    <!--Форма обратной связи -->
-                    <form class="feedback">
-                        Мы обязательно вам ответим!
-                        <input type="text" placeholder="Как вас зовут">
-                        <input type="email" placeholder="Ваша почта для ответа">
-                        <textarea cols="50" rows="6" placeholder="Напишите что-нибудь..."></textarea>
+                <section class="col-2 subscribe">
+                    <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не          спамить и не слать всякой не нужной ерунды. Честно =) 
+                    </p>
+                    <form>
+                        <input type="email" placeholder="Электронная почта">
                         <button type="submit">Отправить</button>
                     </form>
+                
                 </section>
-            </section>
-       
+                <section class="map">
+                    <section class="contacts">
+                        <p>Адрес главного офиса и офлайн магазина:<br>
+                        ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
+                        <p>Для заказов по телефону:<br>
+                        8 812 450-25-25 (с 10 до 20 ежедневно)</p>
+                        
+                        <a href="#">Форма обратной связи</a>
+                        
+                        <form class="feedback">
+                            Мы обязательно вам ответим!
+                            <input type="text" placeholder="Как вас зовут">
+                            <input type="email" placeholder="Ваша почта для ответа">
+                            <textarea cols="50" rows="6" placeholder="Напишите что-нибудь..."></textarea>
+                            <button type="submit">Отправить</button>
+                        
+                        </form>
+                        
+                        
+                    </section>
+                </section>
+        </div>
     </main>
     <footer class="main-footer">
       <div class="container">
@@ -258,14 +248,12 @@
               <a href="#">Наши документы</a>
               <a href="#">Экологические стандарты</a>
           </secion>
-          <secion class="copyright">
-              <img src="http://placehold.it/150x100" width="30" height="20">
-              <span class="copyright-top"> html academy</span>
-             Сделано в <a href="#">HTML Academy</a> © 2016
+          <secion class="copyright"></secion>
           
-          </secion>
-      </div> 
-            
+          
+          
     </footer>
+
+
   </body>
 </html>
