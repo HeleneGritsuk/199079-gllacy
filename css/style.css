@@ -47,8 +47,36 @@ position:relative;
 
 }
 .point1{
-left:10px;
+    left:10px;
 }
 .point2{
-left:45px;
+    left:45px;
+}
+.col-2{
+    width:420px;
+    border-radius:7%;
+    
+}
+
+.col-4 img{
+    border-radius: 50%;
+    
+    
+}
+.raspberry{
+    min-height: 230px;
+    
+    background: url("../img/raspberry-bg.jpg") no-repeat;  
+}
+.chocolate{
+    min-height: 230px;
+    
+    background: url("../img/choko-bg.jpg") no-repeat;  
+}
+
+.social-btn{
+  display:inline-block;
+    width:20px;
+    height:20px;
+    
 }
