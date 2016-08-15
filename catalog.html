@@ -34,71 +34,70 @@
                   </ul>
               </nav>
             <div class="user-block">
-                <div class="loupe"><img src="http://placehold.it/150x100" width="15" height="10"></div>
-                <form class="search-form">
-                    <input type="search" placeholder="Что ищем?">
-                </form>
-                <div class="login"><img src="http://placehold.it/150x100" width="15" height="10">Вход</div>
                 
-                <!--Форма входа -->
-                <form class="form-login">
-                    <input type="email" placeholder="Электронная почта">
-                    <input type="password" placeholder="Пароль">
-                    <input type="submit" value="Войти">
-                    <a href="#">Забыли пароль</a>
-                    <a href="#">Новая регистрация</a>
-                </form>
+                <div class="loupe"><img src="http://placehold.it/150x100" width="15" height="10">
+                    <form class="search-form">
+                        <input type="search" placeholder="Что ищем?">
+                    </form>
+                </div>
                 
-                <div class="shopping-cart"><img src="http://placehold.it/150x100" width="15" height="10">Пусто</div>
-                
-                <!--Корзина с заказами -->
-                <table class="order-list">
-                    <tr>
-                        <td>
-                            <div class="del-button"><img src="http://placehold.it/150x100" width="15" height="10" alt="удалить"></div>
-                        </td>
-                        <td>
-                            <img src="http://placehold.it/150x100" width="100" height="50" alt="Пломбир с апельсиновым джемом">
-                        </td>              
-                        <td>
-                            Пломбир с апельсиновым джемом
-                        </td>
-                        <td>
-                            1,5 кг х <span>200 руб.</span>  
-                        </td>
-                         <td>
-                            300 руб.
-                        </td>
-                        
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="del-button"><img src="http://placehold.it/150x100" width="15" height="10" alt="удалить"></div>
-                        </td>
-                        <td>
-                            <img src="http://placehold.it/150x100" width="100" height="50" alt="Клубничный пломбир с присыпкой из белого шоколада">
-                        </td>              
-                        <td>
-                            Клубничный пломбир с присыпкой из белого шоколада
-                        </td>
-                        <td>
-                            1,5 кг х <span>300 руб.</span>  
-                        </td>
-                         <td>
-                            450 руб.
-                        </td>
-                        
-                    </tr>
-                    <tr>
-                        <td colspan="5">Итого:750 руб.</td>
-                    </tr>
-                    <tr>
-                        <td colspan="5">
-                            <a href="#">Оформить заказ</a>
-                        </td>
-                    </tr>
-                </table>
-                
+                <div class="login"><img src="http://placehold.it/150x100" width="15" height="10">Вход
+                    <!--Форма входа -->
+                    <form class="form-login">
+                        <input type="email" placeholder="Электронная почта">
+                        <input type="password" placeholder="Пароль">
+                        <input type="submit" value="Войти">
+                        <a href="#">Забыли пароль</a>
+                        <a href="#">Новая регистрация</a>
+                    </form>
+                </div>
+                <div class="shopping-cart"><img src="http://placehold.it/150x100" width="15" height="10">2 товара
+                    <!--Корзина с заказами -->
+                    <div class="checkout">
+                        <table class="order-list">
+                        <tr>
+                            <td>
+                                <div class="del-button"><img src="http://placehold.it/150x100" width="15" height="10" alt="удалить"></div>
+                            </td>
+                            <td>
+                                <img src="img/order-list-img1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом">
+                            </td>              
+                            <td>
+                                Пломбир с апельсиновым джемом
+                            </td>
+                            <td>
+                                1,5 кг х <span>200 руб.</span>  
+                            </td>
+                             <td>
+                                300 руб.
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="del-button"><img src="http://placehold.it/150x100" width="15" height="10" alt="удалить"></div>
+                            </td>
+                            <td>
+                                <img src="img/order-list-img2.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
+                            </td>              
+                            <td>
+                                Клубничный пломбир с присыпкой из белого шоколада
+                            </td>
+                            <td>
+                                1,5 кг х <span>300 руб.</span>  
+                            </td>
+                             <td>
+                                450 руб.
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td colspan="5">Итого:750 руб.</td>
+                        </tr>
+                    </table>
+                    <a href="#">Оформить заказ</a>
+                    </div>  
+                </div>
             </div>
             <div class="shedule">
                 С 10 до 20, ежедневно <br>
@@ -126,9 +125,7 @@
                     </select>
                 </label>
                 <div class="range">
-                    <div class="line"></div>
-                    <div class="point point1"></div>
-                    <div class="point point2"></div>
+                
                 
                 </div>
                 
@@ -154,78 +151,107 @@
                 </label>
                 <input type="submit" value="Применить">  
             </form>
-            
+            <div class="catalog-block">
+                <div class="col-4">
+                    <img src="img/catalog-item1.jpg" width="200" height="200">
+                    <div class="price">
+                        <span>380Р</span>/кг
+                    </div>
+                    <span>Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
+                    <a href="#">Быстрый просмотр</a>
+                </div>
+                <div class="col-4">
+                    <img src="img/catalog-item2.jpg" width="200" height="200">
+                    <div class="price">
+                        <span>380Р</span>/кг
+                    </div>
+                    <span>Сливочно-кофейное с кусочками шоколада</span>
+                    <a href="#">Быстрый просмотр</a>
+                </div>
+                <div class="col-4">
+                    <img src="img/catalog-item3.jpg" width="200" height="200">
+                    <div class="price">
+                        <span>380Р</span>/кг
+                    </div>
+                    <span>Сливочно-клубничное с присыпкой из белого шоколада</span>
+                    <a href="#">Быстрый просмотр</a>
+                </div>
+                <div class="col-4">
+                    <img src="img/catalog-item4.jpg" width="200" height="200">
+                    <div class="price">
+                        <span>380Р</span>/кг
+                    </div>
+                    <span>Сливочное крем-брюле с карамельной подливкой</span>
+                    <a href="#">Быстрый просмотр</a>
+                </div>
 
-            <div class="col-4">
-                <img src="img/catalog-item1.jpg" width="200" height="200">
-                <div class="price">
-                    <span>380Р</span>/кг
+                <div class="col-4">
+                    <img src="img/catalog-item5.jpg" width="200" height="200">
+                    <div class="price">
+                        <span>380Р</span>/кг
+                    </div>
+                    <span> Сливочное с брусничным джемом</span>
+                    <a href="#">Быстрый просмотр</a>
                 </div>
-                <span>Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
-                <a href="#">Быстрый просмотр</a>
-            </div>
-            <div class="col-4">
-                <img src="img/catalog-item2.jpg" width="200" height="200">
-                <div class="price">
-                    <span>380Р</span>/кг
+                <div class="col-4">
+                    <img src="img/catalog-item6.jpg" width="200" height="200">
+                    <div class="price">
+                        <span>380Р</span>/кг
+                    </div>
+                    <span>Сливочно-черничное с цельными ягодами черники </span>
+                    <a href="#">Быстрый просмотр</a>
                 </div>
-                <span>Сливочно-кофейное с кусочками шоколада</span>
-                <a href="#">Быстрый просмотр</a>
-            </div>
-            <div class="col-4">
-                <img src="img/catalog-item3.jpg" width="200" height="200">
-                <div class="price">
-                    <span>380Р</span>/кг
+                <div class="col-4">
+                    <img src="img/catalog-item7.jpg" width="200" height="200">
+                    <div class="price">
+                        <span>380Р</span>/кг
+                    </div>
+                    <span>Сливочно-лимонное с карамельной присыпкой</span>
+                    <a href="#">Быстрый просмотр</a>
                 </div>
-                <span>Сливочно-клубничное с присыпкой из белого шоколада</span>
-                <a href="#">Быстрый просмотр</a>
-            </div>
-            <div class="col-4">
-                <img src="img/catalog-item4.jpg" width="200" height="200">
-                <div class="price">
-                    <span>380Р</span>/кг
+                <div class="col-4">
+                    <img src="img/catalog-item8.jpg" width="200" height="200">
+                    <div class="price">
+                        <span>380Р</span>/кг
+                    </div>
+                    <span>Сливочное с шоколадной стружкой</span>
+                    <a href="#">Быстрый просмотр</a>
                 </div>
-                <span>Сливочное крем-брюле с карамельной подливкой</span>
-                <a href="#">Быстрый просмотр</a>
+                <div class="col-4">
+                    <img src="img/catalog-item9.jpg" width="200" height="200">
+                    <div class="price">
+                        <span>380Р</span>/кг
+                    </div>
+                    <span>Сливочно-ванильное с кусочками шоколада </span>
+                    <a href="#">Быстрый просмотр</a>
+                </div>
+                <div class="col-4">
+                    <img src="img/catalog-item10.jpg" width="200" height="200">
+                    <div class="price">
+                        <span>380Р</span>/кг
+                    </div>
+                    <span>Сливочноe с ментоловым сиропом</span>
+                    <a href="#">Быстрый просмотр</a>
+                </div>
+                <div class="col-4">
+                    <img src="img/catalog-item11.jpg" width="200" height="200">
+                    <div class="price">
+                        <span>380Р</span>/кг
+                    </div>
+                    <span>Сливочное с кусочками черного шоколада</span>
+                    <a href="#">Быстрый просмотр</a>
+                </div>
+                <div class="col-4">
+                    <img src="img/catalog-item12.jpg" width="200" height="200">
+                    <div class="price">
+                        <span>380Р</span>/кг
+                    </div>
+                    <span>Сливочное с мятным сиропом</span>
+                    <a href="#">Быстрый просмотр</a>
+                </div>    
             </div>
+
             
-            <div class="col-4">
-                <img src="img/catalog-item5.jpg" width="200" height="200">
-                <div class="price">
-                    <span>380Р</span>/кг
-                </div>
-                <span> Сливочное с брусничным джемом</span>
-                <a href="#">Быстрый просмотр</a>
-            </div>
-            <div class="col-4">
-                <img src="img/catalog-item6.jpg" width="200" height="200">
-                <div class="price">
-                    <span>380Р</span>/кг
-                </div>
-                <span>Сливочно-черничное с цельными ягодами черники </span>
-                <a href="#">Быстрый просмотр</a>
-            </div>
-            <div class="col-4">
-                <img src="img/catalog-item7.jpg" width="200" height="200">
-                <div class="price">
-                    <span>380Р</span>/кг
-                </div>
-                <span>Сливочно-лимонное с карамельной присыпкой</span>
-                <a href="#">Быстрый просмотр</a>
-            </div>
-            <div class="col-4">
-                <img src="img/catalog-item8.jpg" width="200" height="200">
-                <div class="price">
-                    <span>380Р</span>/кг
-                </div>
-                <span>Сливочное с шоколадной стружкой</span>
-                <a href="#">Быстрый просмотр</a>
-            </div>
-           
-            
-            
-               
-               
         </div>
     </main>
     <footer class="main-footer">
@@ -236,18 +262,19 @@
               <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
               <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
           </section>
-          <secion class="about">
+          <section class="about">
               <a href="#">Для поставщиков</a>
               <a href="#">О производстве</a>
-          </secion>
-          <secion class="documents">
+          </section>
+          <section class="documents">
               <a href="#">Наши документы</a>
               <a href="#">Экологические стандарты</a>
-          </secion>
-          <secion class="copyright"></secion>
+          </section>
+          <section class="copyright">
+              Сделано в <a href="#">HTML Academy</a>© 2016
           
-          
-          
+          </section>
+        </div>    
     </footer>
 
 
