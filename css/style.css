@@ -35,11 +35,37 @@ h2{
     width: 200px;
 }
 
-.col-4 img{
+.hit-block img{
     border-radius: 50%;
     
     
 }
+/*---------хэдер--------------*/
+.main-header .container{
+     display: flex;
+    position: relative;
+}
+ul.catalog,.search-form,.form-login, .checkout{
+    display: none;
+}
+.main-navigation{
+   display: flex; 
+    
+}
+.main-navigation>ul{
+  display: flex;
+    list-style: none;
+}
+.shedule{
+    position: absolute;
+    top:60px;
+    right:5px;
+    
+}
+.user-block{
+   display: flex; 
+}
+
 /*---------блок даром--------------*/
 .for-free{
     display: flex;
@@ -105,6 +131,12 @@ h2{
 .feedback{
     display: none;
 }
+
+.main-footer .container{
+    margin: 0 auto;
+    display: flex;
+}
+
 .order-list-item {
     
     border-radius: 50%; 
