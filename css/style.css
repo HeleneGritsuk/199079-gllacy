@@ -42,3 +42,8 @@ h2{
     
     background: url("../img/choko-bg.jpg") no-repeat;  
 }
+.order-list-item {
+    
+    border-radius: 50%; 
+    
+}
