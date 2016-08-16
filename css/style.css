@@ -9,10 +9,15 @@ body {
     background-color: #849d8f;
     
 }
+.container {
+    width:860px;
+    margin: 0 auto;
+    
+}
 h1{
     
     font-size: 30px;
-    line-height:42px;
+    
     
 }
 h2{
@@ -23,8 +28,11 @@ h2{
 
 .col-2{
     width:420px;
-    border-radius:7%;
     
+    
+}
+.col-4{
+    width: 200px;
 }
 
 .col-4 img{
@@ -32,15 +40,70 @@ h2{
     
     
 }
-.raspberry{
-    min-height: 230px;
+/*---------блок даром--------------*/
+.for-free{
+    display: flex;
+    justify-content: space-between;
+    min-height: 227px;
+    margin-bottom: 38px;
     
-    background: url("../img/raspberry-bg.jpg") no-repeat;  
+}
+.raspberry{
+    background: url("../img/raspberry-bg.png") no-repeat;
+    
 }
 .chocolate{
-    min-height: 230px;
+   
     
-    background: url("../img/choko-bg.jpg") no-repeat;  
+    background: url("../img/choco-bg.png") no-repeat;
+    
+}
+/*---------блок хиты--------------*/
+
+.hit-block{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 37px;
+}
+/*---------блок описание--------------*/
+.description{
+    background: url("../img/about-bg.png") no-repeat;
+    margin-bottom: 35px;
+}
+.description-columns{
+   display: flex;
+   justify-content: space-between;
+    
+}
+/*---------блок блог и подписка--------------*/
+.blog-subscribe{
+    color:#000;
+    display: flex;
+    justify-content: space-between;
+    min-height: 219px;
+    margin-bottom: 40px;
+}
+.blog{
+    background:url("../img/blog-bg.png");
+    
+}
+.subscribe{
+    background:url("../img/subscribe-bg.png");  
+}
+/*---------карта,контакты--------------*/
+.map{
+    margin: 0 auto;
+}
+.contacts{
+    background-color: #fdfefe;
+    border-radius: 10px;
+    width: 578px;
+    color:#000;
+    
+
+}
+.feedback{
+    display: none;
 }
 .order-list-item {
     
