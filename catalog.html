@@ -26,9 +26,6 @@
                           <a href="#">Доставка и оплата</a>
                       </li>
                       <li>
-                          <a href="#">Прайс-лист</a>
-                      </li>
-                      <li>
                           <a href="#">О компании</a>
                       </li>
                   </ul>
@@ -116,40 +113,53 @@
                 <h1>Сливочное мороженое</h1>
             </div>
             <form class="filter">
-                <label>Сортировка:
-                    <select>
-                        <option>по популярности </option>
-                        <option>сначала недорогие </option>
-                        <option>сначала дорогие </option>
-                        <option>по жирности </option>
-                    </select>
-                </label>
-                <div class="range">
-                
-                
+                <div class="filter-sorting">
+                    <label>Сортировка:
+                        <select>
+                            <option><span>по популярности</span></option>
+                            <option><span>сначала недорогие</span> </option>
+                            <option><span>сначала дорогие</span> </option>
+                            <option><span>по жирности</span> </option>
+                        </select>
+                    </label>
                 </div>
                 
-                <label><input type="radio" name="richness">0%</label>
-                <label><input type="radio" name="richness">до 10%</label>
-                <label><input type="radio" name="richness">до 30%</label>
-                <label><input type="radio" name="richness">выше 30%</label>
-                Наполнители
-                <label>
-                    <input type="checkbox" checked> шоколадные
-                </label>
-                <label>
-                    <input type="checkbox"> сахарные присыпки
-                </label>
-                <label>
-                    <input type="checkbox"> фрукты
-                </label>
-                <label>
-                    <input type="checkbox" checked> сиропы
-                </label>
-                <label>
-                    <input type="checkbox"> джемы
-                </label>
-                <input type="submit" value="Применить">  
+                <div class="filter-price">
+                    Цена: 100 руб. – 500 руб.
+                    <div class="range">
+                        <div class="scale"><div style="margin-left:34px;width:100px;" class="bar"></div></div>
+                        <div class="toggle min-toggle"></div>
+                        <div class="toggle max-toggle"></div>
+                    </div>
+                </div>
+                
+                <fieldset class="filter-richness">
+                    <legend>Жирность:</legend>
+                    <label><input type="radio" name="richness"><span>0%</span></label>
+                    <label><input type="radio" name="richness"><span>до 10%</span></label>
+                    <label><input type="radio" name="richness"><span>до 30%</span></label>
+                    <label><input type="radio" name="richness"><span>выше 30%</span></label>
+                </fieldset>
+               <fieldset class="filter-filling">
+                    <legend>Наполнители:</legend>
+                    <label>
+                        <input type="checkbox" checked> <span>шоколадные</span>
+                    </label>
+                    <label>
+                        <input type="checkbox"> <span>сахарные присыпки</span>
+                    </label>
+                    <label>
+                        <input type="checkbox"> <span>фрукты</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" checked><span> сиропы</span>
+                    </label>
+                    <label>
+                        <input type="checkbox"> <span>джемы</span>
+                    </label>
+                </fieldset>
+                <button type="submit">Применить</button>
+                  
             </form>
             <div class="catalog-block">
                 <div class="col-4">
@@ -250,28 +260,39 @@
                     <a href="#">Быстрый просмотр</a>
                 </div>    
             </div>
+            <div class="pagination">
+                
+                <ul>
+                    <li><span class="page-number active">1</span></li>
+                    <li><a class="page-number" href="#">2</a></li>
+                    <li><a class="page-number" href="#">3</a></li>
+                    <li><a class="page-number" href="#">4</a></li>
+                    <li><a class="page-number" href="#">5</a></li>
+                </ul>
+                
+            </div>
 
             
         </div>
     </main>
     <footer class="main-footer">
       <div class="container">
-          <section class="social">
+          <section class="main-footer-social col-4">
               <a class="social-btn social-btn-tw" href="#">Твиттер</a>
               <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
               <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
               <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
           </section>
-          <section class="about">
+          <section class="main-footer-about col-4">
               <a href="#">Для поставщиков</a>
               <a href="#">О производстве</a>
           </section>
-          <section class="documents">
+          <section class="main-footer-documents col-4">
               <a href="#">Наши документы</a>
               <a href="#">Экологические стандарты</a>
           </section>
-          <section class="copyright">
-              Сделано в <a href="#">HTML Academy</a>© 2016
+          <section class="main-footer-copyright col-4">
+              Сделано в HTML Academy © 2016
           
           </section>
         </div>    
