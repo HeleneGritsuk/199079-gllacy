@@ -9,6 +9,9 @@ body {
     
     
 }
+.body-catalog{
+    background-color: #9aaea3;
+}
 .container {
     width:860px;
     margin: 0 auto;
@@ -94,7 +97,6 @@ body > input[type="radio"] {
 .site-wrapper {
   min-width: 940px;
   min-height: 100vh; /* для демо */
-
   background-repeat: no-repeat;
   background-position: top center;
 
@@ -112,16 +114,16 @@ body > input[type="radio"] {
 
 .site-wrapper:before,
 .site-wrapper:after {
-  background-image: url("slide-1.png");
+  background-image: url("../img/slide-1.png");
+   
 }
 
 .site-wrapper:after {
-  background-image: url("slide-2.png");
+  background-image: url("../img/slide-2.png");
 }
 
 .content-wrapper {
-    position: relative;
-  width: 900px;
+  position: relative;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -217,8 +219,9 @@ body > input[type="radio"] {
 }
 
 #btn-1:checked ~ .site-wrapper {
-  /*background-color: #849d8f;*/
+     /*background-color: #849d8f;*/
   background-image: url("../img/slide-1.png");
+    
 }
 
 #btn-2:checked ~ .site-wrapper {
@@ -349,6 +352,7 @@ body > input[type="radio"] {
 /*---------карта,контакты--------------*/
 .map{
     margin: 0 auto;
+    height: 426px;
 }
 .contacts{
     background-color: #fdfefe;
