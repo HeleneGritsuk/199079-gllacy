@@ -6,6 +6,43 @@
       <title>HTML Academy: Глейси</title>
   </head>
   <body class="body-catalog">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" style="display: none;">
+        <symbol id="login" viewBox="0 0 20.063 19">
+        
+      <defs>
+        <style>
+          .cls-1 {
+            fill: #fff;
+            fill-opacity: 0.99;
+            fill-rule: evenodd;
+          }
+        </style>
+      </defs>
+      <path d="M17.059,18.986 L6.000,18.986 C4.343,18.986 3.000,17.642 3.000,15.985 L3.000,15.000 L5.000,15.000 L5.000,17.000 L18.000,17.000 L18.000,2.000 L5.000,2.000 L5.000,3.969 L3.000,3.969 L3.000,3.009 C3.000,1.352 4.343,0.009 6.000,0.009 L17.059,0.009 C18.716,0.009 20.059,1.352 20.059,3.009 L20.059,15.985 C20.059,17.642 18.716,18.986 17.059,18.986 ZM6.024,4.158 L13.051,9.458 L6.024,14.758 L6.024,12.015 L-0.005,12.015 L-0.005,6.901 L6.024,6.901 L6.024,4.158 Z" class="cls-1"/></symbol>
+        
+       
+    <symbol id="loupe" viewBox="0 0 16.687 16.688">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path d="M11.936,10.497 L11.178,10.497 L10.914,10.236 C11.845,9.152 12.411,7.746 12.411,6.206 C12.411,2.782 9.632,0.007 6.205,0.007 C2.777,0.007 -0.001,2.782 -0.001,6.206 C-0.001,9.629 2.777,12.404 6.205,12.404 C7.747,12.404 9.154,11.840 10.239,10.910 L10.502,11.172 L10.502,11.927 L15.275,16.687 L16.698,15.265 L11.936,10.497 ZM6.205,10.497 C3.832,10.497 1.908,8.576 1.908,6.206 C1.908,3.835 3.832,1.914 6.205,1.914 C8.578,1.914 10.501,3.835 10.501,6.206 C10.501,8.576 8.578,10.497 6.205,10.497 Z" class="cls-1"/></symbol>
+    <symbol id="cart" viewBox="0 0 20.625 19.719">
+        <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path d="M20.576,4.429 L19.372,13.341 C19.188,14.263 18.348,14.976 17.490,14.976 L6.610,14.976 C5.751,14.976 4.914,14.263 4.731,13.341 L3.262,3.054 C3.116,2.322 3.105,2.078 3.125,1.999 L1.000,1.999 C0.447,1.999 -0.000,1.552 -0.000,0.999 C-0.000,0.447 0.447,-0.001 1.000,-0.001 L5.000,-0.001 C5.552,-0.001 6.000,0.447 6.000,0.999 C6.000,1.515 5.604,1.925 5.102,1.979 L19.067,1.979 C20.172,1.979 20.840,3.110 20.576,4.429 ZM5.418,3.947 L6.731,12.947 L17.403,12.947 C17.398,12.947 17.399,12.944 17.407,12.933 L18.593,4.145 C18.593,4.145 18.621,3.947 18.624,3.947 L5.418,3.947 ZM7.246,15.955 C8.281,15.955 9.120,16.795 9.120,17.830 C9.120,18.865 8.281,19.704 7.246,19.704 C6.210,19.704 5.371,18.865 5.371,17.830 C5.371,16.795 6.210,15.955 7.246,15.955 ZM16.246,15.955 C17.281,15.955 18.120,16.795 18.120,17.830 C18.120,18.865 17.281,19.704 16.246,19.704 C15.210,19.704 14.371,18.865 14.371,17.830 C14.371,16.795 15.210,15.955 16.246,15.955 Z" class="cls-1"/>
+    </symbol>
+    </svg>
        <header class="main-header">
            <div class="container">
                <nav class="main-navigation">
@@ -32,13 +69,13 @@
               </nav>
             <div class="user-block">
                 
-                <div class="loupe"><img src="http://placehold.it/150x100" width="15" height="10">
+                <div class="loupe"><svg class="icon"><use xlink:href="#loupe"/></svg>
                     <form class="search-form">
                         <input type="search" placeholder="Что ищем?">
                     </form>
                 </div>
                 
-                <div class="login"><img src="http://placehold.it/150x100" width="15" height="10">Вход
+                <div class="login"><svg class="icon"><use xlink:href="#login"/></svg>Вход
                     <!--Форма входа -->
                     <form class="form-login">
                         <input type="email" placeholder="Электронная почта">
@@ -168,7 +205,7 @@
                         <span>380Р</span>/кг
                     </div>
                     <span>Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
-                    <a href="#">Быстрый просмотр</a>
+                    <a class="btn" href="#">Быстрый просмотр</a>
                 </div>
                 <div class="col-4">
                     <img src="img/catalog-item2.jpg" width="200" height="200">
@@ -176,7 +213,7 @@
                         <span>380Р</span>/кг
                     </div>
                     <span>Сливочно-кофейное с кусочками шоколада</span>
-                    <a href="#">Быстрый просмотр</a>
+                    <a class="btn" href="#">Быстрый просмотр</a>
                 </div>
                 <div class="col-4">
                     <img src="img/catalog-item3.jpg" width="200" height="200">
@@ -184,7 +221,7 @@
                         <span>380Р</span>/кг
                     </div>
                     <span>Сливочно-клубничное с присыпкой из белого шоколада</span>
-                    <a href="#">Быстрый просмотр</a>
+                    <a class="btn" href="#">Быстрый просмотр</a>
                 </div>
                 <div class="col-4">
                     <img src="img/catalog-item4.jpg" width="200" height="200">
@@ -192,7 +229,7 @@
                         <span>380Р</span>/кг
                     </div>
                     <span>Сливочное крем-брюле с карамельной подливкой</span>
-                    <a href="#">Быстрый просмотр</a>
+                    <a class="btn" href="#">Быстрый просмотр</a>
                 </div>
 
                 <div class="col-4">
@@ -201,7 +238,7 @@
                         <span>380Р</span>/кг
                     </div>
                     <span> Сливочное с брусничным джемом</span>
-                    <a href="#">Быстрый просмотр</a>
+                    <a class="btn" href="#">Быстрый просмотр</a>
                 </div>
                 <div class="col-4">
                     <img src="img/catalog-item6.jpg" width="200" height="200">
@@ -209,7 +246,7 @@
                         <span>380Р</span>/кг
                     </div>
                     <span>Сливочно-черничное с цельными ягодами черники </span>
-                    <a href="#">Быстрый просмотр</a>
+                    <a class="btn" href="#">Быстрый просмотр</a>
                 </div>
                 <div class="col-4">
                     <img src="img/catalog-item7.jpg" width="200" height="200">
@@ -217,7 +254,7 @@
                         <span>380Р</span>/кг
                     </div>
                     <span>Сливочно-лимонное с карамельной присыпкой</span>
-                    <a href="#">Быстрый просмотр</a>
+                    <a class="btn" href="#">Быстрый просмотр</a>
                 </div>
                 <div class="col-4">
                     <img src="img/catalog-item8.jpg" width="200" height="200">
@@ -225,7 +262,7 @@
                         <span>380Р</span>/кг
                     </div>
                     <span>Сливочное с шоколадной стружкой</span>
-                    <a href="#">Быстрый просмотр</a>
+                    <a class="btn" href="#">Быстрый просмотр</a>
                 </div>
                 <div class="col-4">
                     <img src="img/catalog-item9.jpg" width="200" height="200">
@@ -233,7 +270,7 @@
                         <span>380Р</span>/кг
                     </div>
                     <span>Сливочно-ванильное с кусочками шоколада </span>
-                    <a href="#">Быстрый просмотр</a>
+                    <a class="btn" href="#">Быстрый просмотр</a>
                 </div>
                 <div class="col-4">
                     <img src="img/catalog-item10.jpg" width="200" height="200">
@@ -241,7 +278,7 @@
                         <span>380Р</span>/кг
                     </div>
                     <span>Сливочноe с ментоловым сиропом</span>
-                    <a href="#">Быстрый просмотр</a>
+                    <a class="btn" href="#">Быстрый просмотр</a>
                 </div>
                 <div class="col-4">
                     <img src="img/catalog-item11.jpg" width="200" height="200">
@@ -249,7 +286,7 @@
                         <span>380Р</span>/кг
                     </div>
                     <span>Сливочное с кусочками черного шоколада</span>
-                    <a href="#">Быстрый просмотр</a>
+                    <a class="btn" href="#">Быстрый просмотр</a>
                 </div>
                 <div class="col-4">
                     <img src="img/catalog-item12.jpg" width="200" height="200">
@@ -257,7 +294,7 @@
                         <span>380Р</span>/кг
                     </div>
                     <span>Сливочное с мятным сиропом</span>
-                    <a href="#">Быстрый просмотр</a>
+                    <a class="btn" href="#">Быстрый просмотр</a>
                 </div>    
             </div>
             <div class="pagination">
@@ -292,7 +329,7 @@
               <a href="#">Экологические стандарты</a>
           </section>
           <section class="main-footer-copyright col-4">
-              Сделано в HTML Academy © 2016
+               Сделано в <a href="#">HTML Academy</a> © 2016
           
           </section>
         </div>    

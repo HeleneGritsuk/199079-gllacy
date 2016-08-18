@@ -1,4 +1,13 @@
-
+.icon {
+  width: 20px;
+  height: 20px;
+ 
+}
+.icon-about {
+  width: 48px;
+  height: 48px;
+  float:left;
+}
 body {
     
     font-family: "Roboto",sans-serif;
@@ -89,7 +98,7 @@ ul.catalog,.search-form,.form-login, .checkout{
 }
 
 
-
+/*---------слайдер--------------*/
 body > input[type="radio"] {
   display: none;
 }
@@ -103,7 +112,7 @@ body > input[type="radio"] {
   transition: background-image 0.5s ease, background-color 0.5s ease;
 }
 
-/* Псевдоэлементы с изображениями нужны только для предзагрузки картинок, чтобы они уже были в кеше в момент переключения слайдов и сразу отображались */
+
 
 .site-wrapper:before,
 .site-wrapper:after {
@@ -151,7 +160,18 @@ body > input[type="radio"] {
   font-size: 60px;
     line-height: 60px;
 }
-
+.btn{
+  display: inline-block;
+  background: #f26843;
+  background:    -moz-linear-gradient(top, #f26843 0%, #e74b36 100%);
+  background: -webkit-linear-gradient(top, #f26843 0%, #e74b36 100%);
+  background:         linear-gradient(to bottom, #f26843 0%, #e74b36 100%); 
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 100px;
+  padding: 15px 20px;
+  
+}
 .slide-btn {
   position: absolute;
   bottom: 33px;
@@ -353,12 +373,18 @@ body > input[type="radio"] {
 .map{
     margin: 0 auto;
     height: 426px;
+    position: relative;
 }
 .contacts{
+    box-sizing: border-box;
+    width:300px;
     background-color: #fdfefe;
     border-radius: 10px;
-    width: 578px;
     color:#000;
+    position: absolute;
+    top: 5px;
+    left: 575px;
+    padding: 30px 25px;
     
 
 }
