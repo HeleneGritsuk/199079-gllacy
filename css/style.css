@@ -1,12 +1,26 @@
 .icon {
   width: 20px;
   height: 20px;
+  fill: #fff;
+  fill-rule: evenodd;
  
 }
 .icon-about {
+  fill: #323232;
+  fill-rule: evenodd;
   width: 48px;
   height: 48px;
   float:left;
+}
+.icon-social{
+  width: 32px;
+  height: 32px;
+  fill: #fff;
+  opacity: 0.8;
+  fill-rule: evenodd;
+  border-radius:50%;
+  border:3px solid rgba(255,255,255,0.5);
+  margin-right: 10px;
 }
 body {
     margin:0;
@@ -15,6 +29,7 @@ body {
     color:#fff;
     font-weight: 400;
     line-height:22px;
+    min-width:900px;
     
     
 }
@@ -48,7 +63,7 @@ body {
 }
 .row{
     
-    margin: 0 2.3%;
+    padding: 0 2.3%;
     
 }
 
@@ -73,12 +88,7 @@ h2{
     width: 200px;
 }*/
 
-.item-img{
-    border-radius: 50%;
-    overflow: hidden;
-    
-    
-}
+
 /*---------хэдер--------------*/
 .main-header {
     padding-top: 10px;
@@ -87,22 +97,50 @@ h2{
     position: relative;
     
 }
-ul.catalog,.search-form,.form-login, .checkout{
+.sub-menu,.search-form,.form-login, .checkout{
     display: none;
 }
-.main-navigation{
+.navigation-block{
    display: flex; 
     
 }
-.main-navigation>ul{
+.main-menu{
   list-style: none;
   margin-top: 15px;
   padding: 0;
 }
-.main-navigation>ul>li{
-   display: inline-block; 
+.sub-menu{
+  position:absolute;
+  top:20px;
+  z-index: 10;
+  display: none;
+  width:143px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+    background-color: #f8f7f4;
+    border-radius:5px;
 }
-.main-navigation>ul>li>a{
+.sub-menu a{
+    padding: 11px 0px 13px 20px;
+  display: block;
+  text-decoration: none;
+}
+.sub-menu li:first-child a{
+    border-bottom: 1px solid rgba(209,208,206,0.2);
+}
+.main-menu>li:hover .sub-menu{
+   display: block;
+    
+}
+.main-navigation>ul:hover .sub-menu{
+    
+}
+.main-menu>li{
+  display: inline-block;
+  position:relative;
+}
+.main-menu>li>a{
    display: block;
     color: #fff;
     margin-right: 15px;
@@ -124,7 +162,10 @@ ul.catalog,.search-form,.form-login, .checkout{
 .user-block{
    display: flex; 
 }
-
+.hit-block-item img{
+    border-radius: 50%;
+    overflow:hidden;
+}
 
 /*---------слайдер--------------*/
 body > input[type="radio"] {
@@ -132,8 +173,6 @@ body > input[type="radio"] {
 }
 
 .site-wrapper {
-  min-width: 940px;
-  min-height: 100vh; /* для демо */
   background-repeat: no-repeat;
   background-position: top center;
 
@@ -206,9 +245,13 @@ body > input[type="radio"] {
 .slide-btn {
   position: absolute;
   bottom: 33px;
-  left: 34%;
+  left: 0;
+  right:0;
+  box-sizing: border-box;
+  width:277px;
+  margin: 0 auto;
   display: inline-block;
-  padding: 12px 50px;
+  padding: 12px 35px;
   font-weight: 600;
   font-size: 31px;
   line-height: 41px;
@@ -242,9 +285,8 @@ body > input[type="radio"] {
 .slider-controls {
   position: absolute;
   bottom: 25px;
-  left: 0;
+  left: 2.3%;
   z-index: 20;
-
   font-size: 0;
 }
 
@@ -293,7 +335,8 @@ body > input[type="radio"] {
 .main-footer{
     display: flex; 
     font-size: 13px;
-    padding:20px 0px;
+    padding-top:20px;
+    padding-bottom: 20px;
 }
 .main-footer-social{
     margin-right: 20px;   
@@ -410,7 +453,7 @@ body > input[type="radio"] {
 }
 .subscribe{
     background:url("../img/subscribe-bg.jpg") no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     border-radius: 14px;
     overflow: hidden;
 }
