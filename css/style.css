@@ -445,6 +445,7 @@ body > input[type="radio"] {
 
 /*---------блок даром--------------*/
 .for-free{
+    
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -455,12 +456,16 @@ body > input[type="radio"] {
     background-size: cover;
     border-radius: 14px;
     overflow: hidden;
+    box-sizing: border-box;
+    padding:25px 18px 20px 18px;
 }
 .chocolate{
     background: url("../img/choco-bg.jpg") no-repeat;
     background-size: cover;
     border-radius: 14px;
     overflow: hidden;
+    box-sizing: border-box;
+    padding:25px 18px 20px 18px;
     
 }
 /*---------блок хиты--------------*/
