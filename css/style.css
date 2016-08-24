@@ -1,10 +1,4 @@
-.icon {
-  width: 20px;
-  height: 20px;
-  fill: #fff;
-  fill-rule: evenodd;
- 
-}
+
 .icon-about {
   fill: #323232;
   fill-rule: evenodd;
@@ -152,6 +146,40 @@ h2{
 .user-block{
      margin-top: 15px;
     
+}
+.icon {
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+  fill-rule: evenodd;
+  padding: 6px;
+ 
+}
+.loupe{
+    position: relative;
+    background-color: rgba(255,255,255,0.2);
+    width:32px;
+    height:32px;
+    border-radius: 50%;
+}
+.loupe:hover .search-form{
+    display: block;
+    position:absolute;
+    right:0;
+    top:30px;
+}
+.search-form{
+    padding: 20px 15px;
+    background-color: #f8f7f4;
+    z-index: 10;
+    border-radius:5px;
+}
+input[type="search"]{
+box-sizing: border-box;
+width:310px;
+height:43px;
+padding:12px 10px;
+border-radius:5px;
 }
 .shedule{
     position: absolute;
@@ -417,10 +445,34 @@ body > input[type="radio"] {
     flex-wrap: wrap;
     margin-bottom: 37px;
 }
+.hit-block-item{
+    position: relative;
+}
+.hit-block-item::before{
+    content:"";
+    background: url(../img/hit.jpg) 50% 50% no-repeat;
+    display: block;
+    height: 61px;
+    width:61px;
+    position: relative;  
+    border-radius: 50%;
+    margin-bottom: -61px;
+}
 
+.hit-block-item .btn{
+    display:none;
+}
+.hit-block-item:hover {
+    background-color: rgba(255,255,255,0.2);
+}
+.hit-block-item:hover .btn{
+   display: block;
+  position: absolute;
+}
 .hit-block .col-1{
     width:23.27%;
 }
+
 /*---------блок описание--------------*/
 .description{
     
