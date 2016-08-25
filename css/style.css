@@ -18,7 +18,7 @@
 }
 body {
     margin:0;
-    font-family: "Roboto",sans-serif;
+    font-family: "Roboto","Arial",sans-serif;
     font-size:16px;
     color:#fff;
     font-weight: 400;
@@ -89,6 +89,9 @@ h2{
     display: flex;
     justify-content: space-between;
     position: relative;
+    font-weight:700;
+    font-size: 16px;
+    line-height: 18px;
     
 }
 .sub-menu,.search-form,.form-login, .checkout{
@@ -143,8 +146,13 @@ h2{
 .logo{
     margin-right: 30px;
 }  
+
 .user-block{
+     display: flex; 
      margin-top: 15px;
+    font-weight:500;
+    font-size: 14px;
+    line-height: 16px;
     
 }
 .icon {
@@ -181,15 +189,33 @@ height:43px;
 padding:12px 10px;
 border-radius:5px;
 }
+.login{
+    width:93px;
+    height:31px;
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 15px;
+
+}
+.shopping-cart{
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 15px;
+    width:113px;
+    height:31px;
+
+}
 .shedule{
     position: absolute;
     top:70px;
     right:0px;
+    font-size: 14px;
+    line-height: 16px;
     
 }
-.user-block{
-   display: flex; 
+.shedule span{
+    font-size: 22px;
+    line-height: 24px;
 }
+
 .hit-block-item img{
     border-radius: 50%;
     overflow:hidden;
