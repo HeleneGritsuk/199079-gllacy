@@ -63,14 +63,22 @@ body {
 
 h1{
     
-    font-size: 30px;
+    font-size: 24px;
+    line-height:30px;
     
     
 }
 h2{
-    font-size: 24px;
-    line-height:30px;
+    font-size: 60px;
+    line-height:60px;
     
+    
+}
+h3{
+    font-size: 35px;
+    line-height:41px;
+    font-weight: 700;
+
 }
 
 /*.col-2{
@@ -206,7 +214,7 @@ border-radius:5px;
 .shedule{
     position: absolute;
     top:70px;
-    right:0px;
+    right:2.3%;
     font-size: 14px;
     line-height: 16px;
     
@@ -275,12 +283,9 @@ body > input[type="radio"] {
 .slide-title {
   position: absolute;
   bottom: 140px;
-
-  
   margin: 0 auto;
   margin-bottom: 30px;
-
-  font-weight: 800;
+  font-weight: 700;
   font-size: 60px;
     line-height: 60px;
 }
@@ -297,6 +302,8 @@ body > input[type="radio"] {
   
 }
 .slide-btn {
+  font-size:32px;
+  line-height: 44px;
   position: absolute;
   bottom: 33px;
   left: 0;
@@ -307,8 +314,6 @@ body > input[type="radio"] {
   display: inline-block;
   padding: 12px 35px;
   font-weight: 600;
-  font-size: 31px;
-  line-height: 41px;
   vertical-align: top;
   color: #ffffff;
   text-decoration: none;
@@ -451,21 +456,31 @@ body > input[type="radio"] {
     flex-wrap: wrap;
     margin-bottom: 38px;   
 }
+.for-free p{
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 700;
+
+}
+.for-free h3{
+    margin-top:4px;
+    margin-bottom: 21px;
+}
 .raspberry{
     background: url("../img/ruspberry.jpg") no-repeat;
     background-size: cover;
-    border-radius: 14px;
+    border-radius: 16px;
     overflow: hidden;
     box-sizing: border-box;
-    padding:25px 18px 20px 18px;
+    padding:23px 21px 23px 18px;
 }
 .chocolate{
     background: url("../img/choco-bg.jpg") no-repeat;
     background-size: cover;
-    border-radius: 14px;
+    border-radius: 16px;
     overflow: hidden;
     box-sizing: border-box;
-    padding:25px 18px 20px 18px;
+    padding:23px 21px 23px 18px;
     
 }
 /*---------блок хиты--------------*/
@@ -505,13 +520,16 @@ body > input[type="radio"] {
 }
 
 /*---------блок описание--------------*/
+.description .row{
+padding: 0;
+}
 .description{
     
     background: url("../img/about-bg.jpg") no-repeat;
     background-size: cover;
     border-radius: 14px;
     overflow: hidden;
-    margin-bottom: 35px;
+    margin: 0 2.3% 35px 2.3%;
 }
 .description-columns{
     display: flex;
@@ -565,7 +583,7 @@ position: absolute;
     color:#000;
     position: absolute;
     top: 63px;
-    right: 0px;
+    right: 2.3%;
     padding: 30px 25px;
     
 
