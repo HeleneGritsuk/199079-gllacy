@@ -224,7 +224,7 @@ border-radius:5px;
     line-height: 24px;
 }
 
-.hit-block-item img{
+.catalog-item img{
     border-radius: 50%;
     overflow:hidden;
 }
@@ -278,8 +278,17 @@ body > input[type="radio"] {
 
 .slide {
   display: none;
+  min-height: 564px;
+  position: relative;
 }
-
+.slide img{
+    
+    position: absolute;
+    bottom: -19px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
 .slide-title {
   position: absolute;
   bottom: 140px;
@@ -343,7 +352,7 @@ body > input[type="radio"] {
 
 .slider-controls {
   position: absolute;
-  bottom: 25px;
+  bottom: 60px;
   left: 2.3%;
   z-index: 20;
   font-size: 0;
@@ -473,6 +482,8 @@ body > input[type="radio"] {
     overflow: hidden;
     box-sizing: border-box;
     padding:23px 21px 23px 18px;
+    position: relative;
+    min-height: 230px;
 }
 .chocolate{
     background: url("../img/choco-bg.jpg") no-repeat;
@@ -481,7 +492,15 @@ body > input[type="radio"] {
     overflow: hidden;
     box-sizing: border-box;
     padding:23px 21px 23px 18px;
+    position: relative;
+    z-index:10px;
+    min-height: 230px;
     
+}
+.for-free .btn{
+    position: absolute;
+    bottom:23px;
+    right:21px;
 }
 /*---------блок хиты--------------*/
 
@@ -491,29 +510,55 @@ body > input[type="radio"] {
     flex-wrap: wrap;
     margin-bottom: 37px;
 }
-.hit-block-item{
+.catalog-item{
     position: relative;
+    text-align: center;
 }
-.hit-block-item::before{
+.hit-block .item-wrapper::before{
     content:"";
     background: url(../img/hit.jpg) 50% 50% no-repeat;
     display: block;
     height: 61px;
     width:61px;
-    position: relative;  
+    position: absolute;  
     border-radius: 50%;
-    margin-bottom: -61px;
+    
 }
-
-.hit-block-item .btn{
+.item-wrapper{
+    position:relative;
+}
+.item-price{
+    font-weight:700;
+    font-size:30px;
+    position: absolute;
+    left:0;
+    bottom:19px;
+}
+.item-price span{
+    font-weight:700;
+    font-size:45px;
+}
+.catalog-item-title{
+    display: inline;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    
+}
+.catalog-item .btn-wrapper{
+    padding: 15px 0;
     display:none;
-}
-.hit-block-item:hover {
+    position:absolute;
     background-color: rgba(255,255,255,0.2);
+    left: 0;
+    right: 0;
+    bottom:-82px;
+    margin: 0 auto;
 }
-.hit-block-item:hover .btn{
+.catalog-item:hover {
+  background-color: rgba(255,255,255,0.2);
+}
+.catalog-item:hover .btn-wrapper{
    display: block;
-  position: absolute;
+  
 }
 .hit-block .col-1{
     width:23.27%;
@@ -524,12 +569,19 @@ body > input[type="radio"] {
 padding: 0;
 }
 .description{
-    
+    color:#000;
     background: url("../img/about-bg.jpg") no-repeat;
     background-size: cover;
     border-radius: 14px;
     overflow: hidden;
     margin: 0 2.3% 35px 2.3%;
+}
+.description h1{
+    
+    font-weight: 500;
+}
+.description-item p{
+    padding-left:55px;
 }
 .description-columns{
     display: flex;
@@ -546,17 +598,75 @@ padding: 0;
     min-height: 220px;
 }
 .blog{
+    box-sizing: border-box;
+    padding:27px 16px;
     background:url("../img/blog-bg.jpg") no-repeat;
     background-size: cover;
     border-radius: 14px;
     overflow: hidden;
     
 }
+.blog-news{
+    font-weight: 500;
+    display: block;
+    color:#5a5a5a;
+}
+.blog-news-title{
+    text-decoration: none;
+    font-size: 0px;
+    font-weight: 700;
+    line-height: 30px;
+    color:#353535;
+}
+
+.blog-news-title span{
+    
+    border-bottom: 2px solid #353535;
+    background-color: rgba(255,255,255,0.8);
+    padding:5px;
+    padding-bottom:0px;
+    margin-left: -3px;
+    font-size: 24px;
+}
 .subscribe{
+    box-sizing: border-box;
+    color:#5a5a5a;
     background:url("../img/subscribe-bg.jpg") no-repeat;
     background-size: 100% 100%;
     border-radius: 14px;
     overflow: hidden;
+    padding:19px 25px 40px 25px;
+}
+.subscribe input[type="email"]{
+    padding:9px 13px;
+    margin-right:10px;
+    flex-grow: 1;
+    line-height: 24px;
+    border:1px solid rgba(178,178,178,0.52);
+    border-radius: 5px;
+}
+.form-subscribe{
+    display: flex;
+    align-items: center;
+}
+.btn-submit{
+   
+  
+  box-sizing: border-box;
+  width:127px;
+  padding:10px 16px;
+    font-size: 18px;
+  font-weight: 700;
+    line-height: 24px;
+  border:none;
+    text-align: center;
+  color: #ffffff;
+  background: #f26843;
+  background:    -moz-linear-gradient(top, #f26843 0%, #e74a35 100%);
+  background: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
+  background:         linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+  border-radius: 100px;
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
 }
 /*---------карта,контакты--------------*/
 .map-block{
@@ -673,9 +783,7 @@ position: absolute;
     border-radius: 50%; 
     
 }
-.catalog-block a{
-    display: none;
-}
+
 .pagination ul{
     list-style: none;
     

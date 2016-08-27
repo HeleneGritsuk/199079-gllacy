@@ -194,55 +194,74 @@
                     <div class="col-2 raspberry">
                         <h3>Малинка даром!</h3>
                         <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-                        <div class="centr">
+                        
                             <a class="btn" href="#">Хочу варенье!</a> 
                         
-                        </div>
+                        
                         
                     </div>
                     <div class="col-2 chocolate">
                         <h3>Шоколадки даром!</h3>
                         <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки  абсолютно бесплатно.</p>
-                        <a class="btn" href="#">Хочу шоколадки!</a> 
+                        
+                            <a class="btn" href="#">Хочу шоколадки!</a> 
                     </div>
                 </div>
                 <div class="hit-block row">
-                    <div class="col-1 hit-block-item">
-                        
+                    <div class="col-1 catalog-item">
+                        <div class="item-wrapper">
                             <img src="img/hit1.jpg" width="100%">
-                        
-                        <div class="price">
+                            <div class="item-price">
                             <span>380Р</span>/кг
+                            </div> 
                         </div>
-                        <span>Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
-                        <a class="btn" href="#">Быстрый просмотр</a>
-                    </div>
-                    <div class="col-1 hit-block-item">
-                        <img src="img/hit2.jpg" width="100%">
+                        <span class="catalog-item-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
+                        <div class="btn-wrapper">
+                            <a class="btn" href="#">Быстрый просмотр</a>
+                        </div>
                         
-                        <div class="price">
-                            <span>380Р</span>/кг
-                        </div>
-                        <span>Сливочно-кофейное с кусочками шоколада</span>
-                        <a class="btn" href="#">Быстрый просмотр</a>
                     </div>
-                    <div class="col-1 hit-block-item">
-                        <img src="img/hit3.jpg" width="100%">
+                    <div class="col-1 catalog-item">
+                        <div class="item-wrapper">
+                            <img src="img/hit2.jpg" width="100%">
+                        
+                            <div class="item-price">
+                                <span>380Р</span>/кг
+                            </div>
+                        </div>
+                        
+                        <span class="catalog-item-title">Сливочно-кофейное с кусочками шоколада</span>
+                        <div class="btn-wrapper">
+                            <a class="btn" href="#">Быстрый просмотр</a>
+                        </div>
+                    </div>
+                    <div class="col-1 catalog-item">
+                        <div class="item-wrapper">
+                            <img src="img/hit3.jpg" width="100%">
                        
-                        <div class="price">
-                            <span>380Р</span>/кг
+                            <div class="item-price">
+                                <span>380Р</span>/кг
+                            </div>
                         </div>
-                        <span>Сливочно-клубничное с присыпкой из белого шоколада</span>
-                        <a class="btn" href="#">Быстрый просмотр</a>
+                        
+                        <span class="catalog-item-title">Сливочно-клубничное с присыпкой из белого шоколада</span>
+                        <div class="btn-wrapper">
+                            <a class="btn" href="#">Быстрый просмотр</a>
+                        </div>
                     </div>
 
-                    <div class="col-1 hit-block-item">
-                        <img src="img/hit4.jpg" width="100%">
-                        <div class="price">
+                    <div class="col-1 catalog-item">
+                        <div class="item-wrapper">
+                            <img src="img/hit4.jpg" width="100%">
+                        <div class="item-price">
                             <span>380Р</span>/кг
                         </div>
-                        <span>Сливочное крем-брюле с карамельной подливкой</span>
-                        <a class="btn" href="#">Быстрый просмотр</a>
+                        </div>
+                        
+                        <span class="catalog-item-title">Сливочное крем-брюле с карамельной подливкой</span>
+                        <div class="btn-wrapper">
+                            <a class="btn" href="#">Быстрый просмотр</a>
+                        </div>
                     </div>
                 </div>
                 
@@ -281,8 +300,8 @@
 
                 <div class="blog-subscribe row">
                         <article class="col-2 blog">
-                            Новое в нашем блоге
-                            <a href="#">10  способов сервировки фруктовых щербетов к столу</a>
+                            <span class="blog-news">Новое в нашем блоге</span>
+                            <a class="blog-news-title" href="#"><span>10  способов</span><span>сервировки</span> <span>фруктовых</span> <span>щербетов</span> <span>к столу</span>   </a>
                         </article>
 
 
@@ -291,7 +310,7 @@
                             </p>
                             <form class="form-subscribe">
                                 <input type="email" placeholder="Электронная почта">
-                                <button type="submit">Отправить</button>
+                                <button class="btn-submit" type="submit">Отправить</button>
                             </form>
                         </section>
                     </div>
@@ -357,14 +376,10 @@
    
     <script type="text/javascript">
 
-
-
-
-
 function initMap() {
   var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 17,
-    center: {lat: 59.938579, lng: 30.322954}
+    zoom: 16,
+    center: {lat: 59.939380, lng: 30.328021}
   });
             
     setMarkers(map);   
@@ -378,7 +393,7 @@ function setMarkers(map) {
     // The origin for this image is (0, 0).
     origin: new google.maps.Point(0, 0),
     // The anchor for this image is the base of the flagpole at (0, 32).
-    anchor: new google.maps.Point(31, 142)
+    anchor: new google.maps.Point(40, 142)
   };
     
     var marker = new google.maps.Marker({
