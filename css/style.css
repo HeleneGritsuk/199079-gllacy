@@ -4,7 +4,9 @@
   fill-rule: evenodd;
   width: 48px;
   height: 48px;
-  float:left;
+  position: absolute;
+  top: -12px;
+  left: 0;
 }
 .icon-social{
   width: 32px;
@@ -95,7 +97,6 @@ h3{
 .main-header {
     padding-top: 10px;
     display: flex;
-    justify-content: space-between;
     position: relative;
     font-weight:700;
     font-size: 16px;
@@ -108,37 +109,48 @@ h3{
 .navigation-block{
     margin-left: -5px;
    display: flex; 
-    
+    margin-right: auto;
 }
 .main-menu{
   list-style: none;
-  margin-top: 15px;
+  margin-top:13px;
   padding: 0;
 }
 
 .sub-menu{
+    
   position:absolute;
-  top:20px;
+  top: 35px;
+    left: -9px;
   z-index: 10;
   display: none;
   width:143px;
+    box-sizing: border-box;
   list-style: none;
   margin: 0;
   padding: 0;
-    background-color: #f8f7f4;
-    border-radius:5px;
+  background-color: #f8f7f4;
+  border-radius:5px;
 }
-.sub-menu li:hover{
-    border-radius:5px;
+.sub-menu li:first-child{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.sub-menu li:last-child{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.sub-menu li:hover {
+    
     background-color: #fbded7;
 }
-.sub-menu .new{
-    font-weight: 700;
-    border-bottom: 1px solid rgba(50,50,50,0.2);
+.sub-menu li:active{
+    background-color:#f6b5a5;
 }
+
 .sub-menu a{
-    padding: 11px 0px 13px 20px;
-    margin:0 10px;
+    padding: 9px 0px 6px 14px;
+    margin:0 7px;
   display: block;
   text-decoration: none;
   font-size: 14px;
@@ -146,17 +158,33 @@ h3{
 font-weight: 400;
     color:#323232;
 }
-.sub-menu li:first-child a{
+.sub-menu li:last-child a{
+    padding-bottom: 13px;
+}
+.sub-menu .new{
+    font-weight: 700;
+    border-bottom: 1px solid rgba(50,50,50,0.2);
+    padding:  11px 0px 12px 14px;
+}
+.main-menu>li:hover{
+    
+    
+    background-color: #fff;
+    border-radius: 15px;
+}
+.main-menu>li:hover >a{
+    
+    color: black;
     
 }
 .main-menu>li:hover .sub-menu{
    display: block;
     
 }
-.main-navigation>ul:hover .sub-menu{
-    
-}
+
+
 .main-menu>li{
+  padding: 6px 12px;
   display: inline-block;
   position:relative;
 }
@@ -167,32 +195,35 @@ font-weight: 400;
     border-radius: 18px;
 }
 .main-menu>li>a{
+    
    display: block;
-    color: #fff;
-    margin-right: 15px;
+  color: #fff;
     text-decoration: none;
   border-bottom: 1px solid rgba(255,255,255,0.4);
   
     
 }
 .logo{
-    margin-right: 30px;
+    margin-right: 17px;
 }  
 
 .user-block{
-     display: flex; 
-     margin-top: 15px;
-    font-weight:500;
+  margin-top: 13px;
+    display: flex;
+    align-items: flex-start;
+   
+    font-weight: 500;
     font-size: 14px;
     line-height: 16px;
     
 }
 .icon {
+  vertical-align: middle;
   width: 20px;
   height: 20px;
   fill: #fff;
   fill-rule: evenodd;
-  padding: 6px;
+  
  
 }
 .filled{
@@ -203,11 +234,15 @@ font-weight: 400;
 .loupe{
     position: relative;
     background-color: rgba(255,255,255,0.2);
-    width:32px;
-    height:32px;
+    
     border-radius: 50%;
+    margin-right: 12px;
 }
-
+.loupe .icon{
+    padding: 7.5px;
+    width:17px;
+    height:17px;
+}
 .loupe:hover .search-form{
     display: block;
     
@@ -239,14 +274,22 @@ line-height: 24px;
 font-weight: 400;
 }
 .login{
-    width:93px;
-    height:31px;
+    box-sizing: border-box;
+    padding: 6px 15px;
+    vertical-align: middle;
+    width: 92px;
+    height: 31px;
     background-color: rgba(255,255,255,0.2);
     border-radius: 15px;
     position: relative;
+    margin-right: 12px;
 
 }
-
+.login .icon{
+  width:21px;
+    height:19px;
+    margin-right: 6px;
+}
 .login:hover .form-login{
     display: block;
 }
@@ -277,7 +320,7 @@ font-weight: 400;
   border:none;
   border:1px solid rgba(178,178,178,0.52);
   outline: none;
-    color:#999999
+    color:#999999;
 }
 .form-login .btn-submit{
     width:100px;
@@ -292,12 +335,19 @@ font-weight: 400;
     margin-top: 5px;
 }
 .shopping-cart{
-    background-color: rgba(255,255,255,0.2);
+        background-color: rgba(255,255,255,0.2);
     border-radius: 15px;
-    width:113px;
-    height:31px;
+    width: 113px;
+    height: 31px;
     position: relative;
+    box-sizing: border-box;
+    padding: 6px 15px;
 
+}
+.shopping-cart .icon{
+    width:21px;
+    height:20px;
+    margin-right: 6px;
 }
 .shopping-cart:hover .checkout{
     display: block;
@@ -367,12 +417,17 @@ font-weight: 400;
     padding:5px 10px;
 }
 .shedule{
+       text-align: right;
     position: absolute;
-    top:70px;
-    right:2.3%;
+    top: 72px;
+    right: 2.3%;
     font-size: 14px;
     line-height: 16px;
     
+}
+.shedule p{
+    margin-top: 0;
+    margin-bottom: 5px;
 }
 .shedule span{
     font-size: 22px;
@@ -417,6 +472,7 @@ body > input[type="radio"] {
 
 .content-wrapper {
   position: relative;
+    margin-bottom: 6px;
  
  
 }
@@ -439,15 +495,15 @@ body > input[type="radio"] {
 .slide img{
     
     position: absolute;
-    bottom: -19px;
+    bottom: -25px;
     left: 0;
     right: 0;
     margin: 0 auto;
 }
 .slide-title {
   position: absolute;
-  bottom: 140px;
-  margin: 0 auto;
+  bottom: 99px;
+  margin: 0 10%;
   margin-bottom: 30px;
   font-weight: 700;
   font-size: 60px;
@@ -472,14 +528,14 @@ body > input[type="radio"] {
   font-size:32px;
   line-height: 44px;
   position: absolute;
-  bottom: 33px;
+  bottom: 37px;
   left: 0;
   right:0;
   box-sizing: border-box;
   width:277px;
   margin: 0 auto;
   display: inline-block;
-  padding: 12px 35px;
+  padding: 9px 35px;
   font-weight: 600;
   vertical-align: top;
   color: #ffffff;
@@ -510,7 +566,7 @@ body > input[type="radio"] {
 
 .slider-controls {
   position: absolute;
-  bottom: 60px;
+  bottom: 57px;
   left: 2.3%;
   z-index: 20;
   font-size: 0;
@@ -689,7 +745,7 @@ body > input[type="radio"] {
     border-radius: 16px;
     overflow: hidden;
     box-sizing: border-box;
-    padding:16px 21px 23px 18px;
+    padding:16px 21px 23px 19px;
     position: relative;
     min-height: 230px;
 }
@@ -707,8 +763,9 @@ body > input[type="radio"] {
 }
 .for-free .btn{
     position: absolute;
-    bottom:23px;
-    right:21px;
+    bottom: 26px;
+    right: 19px;
+    padding: 10px 23px;
 }
 /*---------блок хиты--------------*/
 
@@ -734,20 +791,23 @@ body > input[type="radio"] {
     
 }
 .item-wrapper{
+    margin-bottom: 9px;
     position:relative;
 }
 .item-price{
     font-weight:700;
     font-size:30px;
     position: absolute;
-    left:0;
-    bottom:19px;
+    left: -1px;
+    bottom: 23px;
 }
 .item-price span{
     font-weight:700;
     font-size:45px;
 }
 .rouble-icon{
+    margin-left: 2px;
+    margin-right: 3px;
     width:31px;
     height: 36px;
     fill: #fff;
@@ -781,10 +841,9 @@ body > input[type="radio"] {
 }
 
 /*---------блок описание--------------*/
-.description .row{
-padding: 0;
-}
+
 .description{
+    padding: 10px 20px;
     color:#000;
     background: url("../img/about-bg.jpg") no-repeat;
     background-size: cover;
@@ -793,11 +852,16 @@ padding: 0;
     margin: 0 2.3% 35px 2.3%;
 }
 .description h1{
-    
+    margin-bottom: 21px;
     font-weight: 500;
 }
+.description-item{
+    position: relative;
+}
 .description-item p{
-    padding-left:55px;
+    padding-left: 55px;
+    margin-top: 0px;
+    margin-bottom: 22px;
 }
 .description-columns{
     display: flex;
