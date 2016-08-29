@@ -93,15 +93,25 @@
 
                         <div class="loupe"><svg class="icon"><use xlink:href="#loupe"/></svg>
                             <form class="search-form">
-                                <input type="search" placeholder="Что ищем?">
+                                <div class="field-container">
+                                     <input type="search" class="field" required placeholder="Что ищем?">
+                                    <label class="floating-label">Что ищем?</label> 
+                                </div>
                             </form>
                         </div>
 
                         <div class="login"><svg class="icon"><use xlink:href="#login"/></svg><span>Вход</span>
                             <!--Форма входа -->
                             <form class="form-login">
-                                <input type="email" placeholder="Электронная почта">
-                                <input type="password" placeholder="Пароль">
+                                
+                                <div class="field-container">
+                                     <input type="email" class="field" required placeholder="Электронная почта">
+                                    <label class="floating-label">Электронная почта</label> 
+                                </div>
+                                <div class="field-container">
+                                     <input type="password" class="field" required placeholder="Пароль">
+                                    <label class="floating-label">Пароль</label> 
+                                </div>
                                 <button class="btn-submit" type="submit">Войти</button>
                                 
                                 <a href="#">Забыли пароль?</a>
@@ -336,12 +346,20 @@
             <div class="modal-content">
                 <h3 class="modal-content-title">Мы обязательно вам ответим!</h3>
                 <form class="feedback-form">
-                        <input type="text" placeholder="Как вас зовут">
-                        <input type="email" placeholder="Ваша почта для ответа">
-                        <textarea cols="48" rows="5" placeholder="Напишите что-нибудь..."></textarea>
+                    <div class="field-container">
+                        <input type="text" class="field" required placeholder="Как вас зовут?">
+                        <label class="floating-label">Как вас зовут?</label> 
+                    </div>
+                    <div class="field-container">
+                        <input type="email" class="field" required placeholder="Ваша почта для ответа">
+                        <label class="floating-label">Ваша почта для ответа</label>
+                    </div>    
+                    <div class="field-container">
+                        <textarea cols="48" rows="5" class="field" required placeholder="Напишите что-нибудь..."></textarea>
+                        <label class="floating-label">Напишите что-нибудь...</label>
+                    </div>    
                         <div class="btn-align">
                             <button class="btn-submit" type="submit" >Отправить</button>
-                    
                         </div>
                         
                 </form>
