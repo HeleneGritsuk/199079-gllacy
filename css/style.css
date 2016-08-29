@@ -1,4 +1,8 @@
-
+.main-footer a:hover,
+.main-footer a:active
+{
+color:#ffbc9e;
+}
 .icon-about {
   fill: #323232;
   fill-rule: evenodd;
@@ -16,7 +20,7 @@
   fill-rule: evenodd;
   border-radius:50%;
   border:3px solid rgba(255,255,255,0.5);
-  margin-right: 10px;
+  margin-right: 8px;
 }
 body {
     margin:0;
@@ -147,6 +151,9 @@ h3{
 .sub-menu li:active{
     background-color:#f6b5a5;
 }
+.submenu-li-active{
+    background-color:#d07058;
+}
 
 .sub-menu a{
     padding: 9px 0px 6px 14px;
@@ -161,47 +168,49 @@ font-weight: 400;
 .sub-menu li:last-child a{
     padding-bottom: 13px;
 }
-.sub-menu .new{
+.new a{
     font-weight: 700;
     border-bottom: 1px solid rgba(50,50,50,0.2);
     padding:  11px 0px 12px 14px;
 }
-.main-menu>li:hover{
+.main-li:hover{
     
     
     background-color: #fff;
     border-radius: 15px;
 }
-.main-menu>li:hover >a{
+.main-li:hover >a{
     
     color: black;
     
 }
-.main-menu>li:hover .sub-menu{
+.main-li:hover .sub-menu{
    display: block;
     
 }
 
 
-.main-menu>li{
+.main-li{
   padding: 6px 12px;
   display: inline-block;
   position:relative;
 }
-.main-menu .active{
-    padding: 10px 15px;
-    border: none;
+.active{
+    
     background-color: #d07058;
     border-radius: 18px;
 }
-.main-menu>li>a{
+
+.main-li>a{
     
    display: block;
   color: #fff;
     text-decoration: none;
-  border-bottom: 1px solid rgba(255,255,255,0.4);
-  
-    
+  border-bottom: 1px solid rgba(255,255,255,0.4);   
+}
+
+.active>a{
+    border: none;
 }
 .logo{
     margin-right: 17px;
@@ -229,7 +238,7 @@ font-weight: 400;
 .filled{
    fill: #000;
   fill-rule: evenodd;
-  padding: 6px 
+  
 }
 .loupe{
     position: relative;
@@ -244,9 +253,16 @@ font-weight: 400;
     height:17px;
 }
 .loupe:hover .search-form{
-    display: block;
-    
+    display: block;   
 }
+.loupe:hover .icon{
+    fill: #373737;
+    fill-rule: evenodd;
+}
+.loupe:hover {
+    background-color:#f8f7f4;
+}
+
 .search-form{
     display: none;
     padding: 20px 15px;
@@ -293,6 +309,15 @@ font-weight: 400;
 .login:hover .form-login{
     display: block;
 }
+.login:hover .icon{
+    fill: #373737;
+    fill-rule: evenodd;
+}
+.login:hover {
+    background-color:#f8f7f4;
+    color:#323232;
+}
+
 .login .form-login{
      display: none;
     width: 277px;
@@ -341,7 +366,7 @@ font-weight: 400;
     height: 31px;
     position: relative;
     box-sizing: border-box;
-    padding: 6px 15px;
+    padding: 6px 14px;
 
 }
 .shopping-cart .icon{
@@ -523,7 +548,22 @@ body > input[type="radio"] {
     font-size: 18px;
     font-weight: 700;
     line-height: 24px;
+
 }
+.btn:hover {
+  background:    -moz-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+  background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+  background:         linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+}
+
+.btn:active {
+  background:    -moz-linear-gradient(top, #d84732 0%, #e1613e 100%);
+  background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
+  background:         linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+  box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+}
+
 .slide-btn {
   font-size:32px;
   line-height: 44px;
@@ -613,6 +653,19 @@ body > input[type="radio"] {
 #btn-3:checked ~ .site-wrapper label[for="btn-3"] {
   background-color: #ffffff;
 }
+.site-wrapper label[for="btn-1"]:hover,
+.site-wrapper label[for="btn-2"]:hover,
+.site-wrapper label[for="btn-3"]:hover {
+  background-color: rgba(255,255,255,0.4);
+  cursor: pointer;
+}
+.site-wrapper label[for="btn-1"]:active,
+.site-wrapper label[for="btn-2"]:active,
+.site-wrapper label[for="btn-3"]:active {
+  background-color: #fff;
+  cursor: pointer;
+}
+
 /*---------футер--------------*/
 .main-footer{
     display: flex; 
@@ -633,37 +686,52 @@ body > input[type="radio"] {
     text-decoration: none;
     border-bottom: 1px solid rgba(255,255,255,0.4);
 }
-.main-footer .col-1,.col-2{
+.main-footer-social{
     
+    margin-top: 15px;
 }
 .main-footer-social a{
    border-bottom: none;
     
 }
 .main-footer-info{
-    display: flex;
+    padding-top: 6px;
+
 }
-.main-footer-info .info-right{
-    width: 180px;
+.block-info{
+        margin: 0 auto;
+    margin-left: 129px;
+    display: flex;
+
+}
+.info-right{
+       width: 190px;
+}
+.info-right a{
+   margin-top: 3px;
 }
 .main-footer-info a{
     display:inline-block;
 }
 .info-left{
-    width: 160px;
-    box-sizing: border-box;
-    padding:0px 10px;
-    text-align: center;
+        position: relative;
+    margin-right: 11px;
+    width: 130px;
+    text-align: left;
+}
     
 }
-.info-left a:first-of-type{
-    margin-left: 6px;
+.info-left b{
+    font-weight: 700;
+
 }
+
 .info-left a{
-    margin-left: 21px;
+    margin-top: 3px;
+    
 }
 .main-footer-copyright{
-    
+    text-align: right;
     font-size: 12px;
 }
 
@@ -672,9 +740,15 @@ body > input[type="radio"] {
     height:13px;
     fill: #fff;
    fill-rule: evenodd;
+    vertical-align: middle;
+    position: absolute;
+    left: -22px;
+    top: 6px;
 }
 .logo-htmlacademy{
     display: block;
+    margin:0 auto;
+    margin-bottom: 4px;
    width:108px;
     height:37px;
     fill: #fff;
@@ -880,7 +954,7 @@ body > input[type="radio"] {
 .blog{
     min-height:220px;
     box-sizing: border-box;
-    padding:24px 18px;
+    padding:24px 19px;
     background:url("../img/blog-bg.jpg") no-repeat;
     background-size: cover;
     border-radius: 14px;
@@ -892,24 +966,22 @@ body > input[type="radio"] {
     display: block;
     align-items: flex-start;
     color:#5a5a5a;
-    margin-bottom: 5px;
+    margin-bottom: 4px;
 }
 .blog-news-title{
-    text-decoration: none;
+    
     font-size: 0px;
     font-weight: 700;
-    line-height: 30px;
+    line-height: 0px;
     color:#353535;
 }
 
 .blog-news-title span{
     
-    border-bottom: 2px solid #353535;
     background-color: rgba(255,255,255,0.8);
-    padding:5px;
-    padding-bottom:0px;
-    margin-left: -3px;
+    
     font-size: 24px;
+    line-height: 30px;
 }
 .subscribe{
     min-height: 220px;
@@ -953,7 +1025,23 @@ body > input[type="radio"] {
   background:         linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
   border-radius: 100px;
   box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+  outline: none;
 }
+.btn-submit:hover {
+  background:    -moz-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+  background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+  background:         linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+}
+
+.btn-submit:active {
+  background:    -moz-linear-gradient(top, #d84732 0%, #e1613e 100%);
+  background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
+  background:         linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+  box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+outline: none;
+}
+
 /*---------карта,контакты--------------*/
 .map-block{
     margin: 0 auto;
@@ -982,22 +1070,32 @@ position: absolute;
     position: absolute;
     top: 63px;
     right: 2.3%;
-    padding: 14px 25px;
+    padding: 15px 24px;
     
 
+}
+.contacts p{
+    margin-bottom:18px;
 }
 .contacts b{
     font-size: 18px;
     line-height: 24px;
     font-weight: 700;
 }
-.contacts p{
-    margin-bottom:19px;
+.second-column-contacts b{
+    line-height: 22px;
+    display: block;
+    margin-top: 6px;
+    margin-bottom: 2px;
 }
+.second-column-contacts span{
+    line-height: 22px;
+}
+
 .contacts .btn{
     display: block;
-    padding:10px 25px;
-    margin-top: 29px;
+    padding:10px 27px;
+    margin-top: 22px;
     margin-bottom: 17px;
 }
 
