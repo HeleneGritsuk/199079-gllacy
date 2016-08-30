@@ -76,22 +76,32 @@
 
                         <div class="loupe"><svg class="icon"><use xlink:href="#loupe"/></svg>
                             <form class="search-form">
-                                <input type="search" placeholder="Что ищем?">
+                                <div class="field-container">
+                                     <input type="search" class="field" required placeholder="Что ищем?">
+                                    <label class="floating-label">Что ищем?</label> 
+                                </div>
                             </form>
                         </div>
 
                         <div class="login"><svg class="icon"><use xlink:href="#login"/></svg><span>Вход</span>
                             <!--Форма входа -->
                             <form class="form-login">
-                                <input type="email" placeholder="Электронная почта">
-                                <input type="password" placeholder="Пароль">
+                                
+                                <div class="field-container">
+                                     <input type="email" class="field" required placeholder="Электронная почта">
+                                    <label class="floating-label">Электронная почта</label> 
+                                </div>
+                                <div class="field-container">
+                                     <input type="password" class="field" required placeholder="Пароль">
+                                    <label class="floating-label">Пароль</label> 
+                                </div>
                                 <button class="btn-submit" type="submit">Войти</button>
                                 
                                 <a href="#">Забыли пароль?</a>
                                 <a href="#">Новая регистрация</a>
                             </form>
                         </div>
-                        <div class="shopping-cart"><svg class="icon filled"><use xlink:href="#cart"/></svg>2 товара
+                        <div class="shopping-cart shopping-cart-filled"><img class="cart-filled" src="img/cart-filled.png" width="21px" height="20px">2 товара
                             <!--Корзина с заказами -->
                             <div class="checkout">
                                 <table class="order-list">
@@ -143,18 +153,18 @@
                         </div>
                     </div>
                     <div class="shedule">
-                        С 10 до 20, ежедневно <br>
-                        <span>8 812 450-25-25</span>
+                        <p>С 10 до 20, ежедневно</p>
+                        <p><span>8 812 450-25-25</span></p>
                     </div>
 
             </header>
-      <main>
+      <main class="inner-main">
             <div class="row">
                 <div class="top-content">
                     <ul class="breadcrumbs">
                         <li><a href="index.html">Главная</a></li>
                         <li><a href="#">Каталог</a></li>
-                        <li><span>Сливочное</span></li>
+                        <li class="breadcrumbs-item-active"><span>Сливочное</span></li>
                     </ul>
                     <h1>Сливочное мороженое</h1>
                 </div>
@@ -162,12 +172,13 @@
                     <div class="filter-sorting">
                         <span class="filter-title">Сортировка:</span>
                         <div class="select-list">
-                            <select>
-                                <option selected>по популярности</option>
-                                <option>сначала недорогие</option>
-                                <option>сначала дорогие</option>
-                                <option>по жирности</option>
+                            <select name="choose[]">
+                                <option value="" selected>по популярности</option>
+                                <option value="">сначала недорогие</option>
+                                <option value="">сначала дорогие</option>
+                                <option value="">по жирности</option>
                             </select>
+                            <svg><use xlink:href="#marker"/></svg>
                         </div> 
                     </div>
 
@@ -368,7 +379,7 @@
                 <div class="pagination">
 
                     <ul>
-                        <li><span class="page-number active">1</span></li>
+                        <li class="pagination-item-active"><span>1</span></li>
                         <li><a class="page-number" href="#">2</a></li>
                         <li><a class="page-number" href="#">3</a></li>
                         <li><a class="page-number" href="#">4</a></li>
@@ -381,14 +392,15 @@
             </div>
         </main>
         <footer class="row main-footer">
-              <section class="main-footer-social col-1">
+                  <section class="main-footer-social col-1">
                       <a href="#"><svg class="icon-social"><use xlink:href="#twitter"/></svg></a>
                       <a href="#"><svg class="icon-social"><use xlink:href="#insta"/></svg></a>
                       <a href="#"><svg class="icon-social"><use xlink:href="#fb"/></svg></a>
                       <a href="#"><svg class="icon-social"><use xlink:href="#vk"/></svg></a>
                   </section>
                   <section class="main-footer-info col-2">
-                      <div class="info-left">
+                      <div class="block-info">
+                          <div class="info-left">
                           <svg class="icon-heart"><use xlink:href="#heart"/></svg>
                       <a href="#">Для поставщиков</a>
                       <a href="#">О производстве</a>
@@ -400,6 +412,9 @@
                           <a href="#">Экологические стандарты</a>
                           
                       </div>
+                      
+                      </div>
+                      
                   
                       
                   </section>
@@ -408,7 +423,7 @@
                       Сделано в <a href="#">HTML Academy</a> © 2016
                   </section>
               
-      </footer>     
+         </footer> 
        
       
       

@@ -388,6 +388,14 @@
         popup.classList.remove("modal-content-show");
         overlay.classList.remove("modal-overlay-show"); 
       });
+    
+    overlay.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.remove("modal-content-show");
+        overlay.classList.remove("modal-overlay-show"); 
+      });
+         
+         
     </script>
      
    
