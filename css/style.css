@@ -110,6 +110,17 @@ h3{
 .sub-menu{
     display: none;
 }
+.sub-menu::before,
+.search-form::before,
+.form-login::before
+{
+    content:"";
+    display: block;
+    position:absolute;
+    top:-10px;
+    height:10px;
+    width:inherit;
+}
 .navigation-block{
     margin-left: -5px;
    display: flex; 
@@ -266,6 +277,8 @@ font-weight: 400;
 .search-form{
     display: none;
     padding: 20px 15px;
+    width: 340px;
+    box-sizing: border-box;
     background-color: #f8f7f4;
     z-index: 10;
     border-radius:5px;
@@ -322,12 +335,12 @@ font-weight: 400;
      display: none;
     width: 277px;
     box-sizing: border-box;
-    padding: 20px 15px 21px 15px;
+    padding: 20px 15px 21px 21px;
     background-color: #f8f7f4;
     z-index: 10;
     border-radius:5px;
     position:absolute;
-    right:0;
+    right:-1px;
     top:35px;
 }
 
@@ -917,13 +930,13 @@ body > input[type="radio"] {
 /*---------блок описание--------------*/
 
 .description{
-    padding: 10px 20px;
+    padding: 10px 20px 1px 20px;
     color:#000;
     background: url("../img/about-bg.jpg") no-repeat;
     background-size: cover;
     border-radius: 14px;
     overflow: hidden;
-    margin: 0 2.3% 35px 2.3%;
+    margin: 0 2.3% 42px 2.3%;
 }
 .description h1{
     margin-bottom: 21px;
@@ -954,7 +967,7 @@ body > input[type="radio"] {
 .blog{
     min-height:220px;
     box-sizing: border-box;
-    padding:24px 19px;
+    padding:22px 19px;
     background:url("../img/blog-bg.jpg") no-repeat;
     background-size: cover;
     border-radius: 14px;
@@ -991,7 +1004,7 @@ body > input[type="radio"] {
     background-size: 100% 100%;
     border-radius: 14px;
     overflow: hidden;
-    padding:19px 25px 19px 25px;
+    padding:17px 25px 19px 25px;
 }
 .subscribe input[type="email"]{
     padding:9px 13px;
@@ -1200,6 +1213,42 @@ position: absolute;
 .feedback-form .btn-submit{
     width:138px;
 }
+
+.field-container {
+  position: relative;
+  
+}
+.field:focus {
+  outline: 0;
+}
+.floating-label {
+  position:absolute;
+  pointer-events:none;
+  top: 5px;
+  left:10px;
+  font-size: 10px;
+  opacity:0;
+  padding: 0 2px;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  color: #999999;
+}
+.field:focus + .floating-label {
+  opacity:1;
+  top:-18px;
+  color: #5b9ddf;
+}
+
+.field:valid + .floating-label {
+  opacity: 1;
+  top: -18px;
+  
+}
+
+
+
+
+
 /*.main-footer .container{
     margin: 0 auto;
     display: flex;
