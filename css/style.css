@@ -140,28 +140,22 @@ h3{
 }
 
 .sub-menu{
-    
-  position:absolute;
-  top: 35px;
+    position: absolute;
+    top: 37px;
     left: -9px;
-  z-index: 10;
-  display: none;
-  width:143px;
+    z-index: 10;
+    display: none;
+    width: 143px;
     box-sizing: border-box;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  background-color: #f8f7f4;
-  border-radius:5px;
+    list-style: none;
+    margin: 0;
+    background-color: #f8f7f4;
+    border-radius: 5px;
+    padding:0;
+    padding-bottom: 6px;
+    box-shadow: 0px 15px 19px 2px rgba(0,0,0,0.4);
 }
-.sub-menu li:first-child{
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-}
-.sub-menu li:last-child{
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-}
+
 .sub-menu li:hover {
     
     background-color: #fbded7;
@@ -174,22 +168,35 @@ h3{
 }
 
 .sub-menu a{
-    padding: 9px 0px 6px 14px;
-    margin:0 7px;
-  display: block;
-  text-decoration: none;
-  font-size: 14px;
-  line-height: 16px;
-font-weight: 400;
-    color:#323232;
+    padding: 6px 0px 6px 21px;
+    margin-top: 3px;
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    color: #323232;
+    margin-bottom: 1px;
 }
-.sub-menu li:last-child a{
-    padding-bottom: 13px;
+.new{
+    position: relative;
+}
+.new::after{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -4px;
+    left: 7px;
+    width: 127px;
+    height: 1px;
+    background-color: rgba(0,0,0,0.2);
+    z-index: 20;
 }
 .new a{
+    margin-top: 4px;
+    margin-bottom: 8px;
     font-weight: 700;
-    border-bottom: 1px solid rgba(50,50,50,0.2);
-    padding:  11px 0px 12px 14px;
+    padding: 7px 0px 8px 21px;
 }
 .main-li:hover{
     
@@ -206,6 +213,7 @@ font-weight: 400;
    display: block;
     
 }
+
 
 
 .main-li{
@@ -941,25 +949,31 @@ body > input[type="radio"] {
     
 }
 .catalog-item .btn-wrapper{
-    padding: 15px 0;
-    display:none;
-    position:absolute;
+        padding-top: 54px;
+    
+    width: 109.88%;
+    height: 104.2%;
+   
+    display: none;
+    position: absolute;
     background-color: rgba(255,255,255,0.2);
-    left: 0;
-    right: 0;
-    bottom:-74px;
+    left: -4.9%;
+    top: -2%;
+    bottom: -76px;
     margin: 0 auto;
     z-index: 10;
-    border-radius: 0 0 5px 5px;
-}
-.catalog-item:hover {
-  background-color: rgba(255,255,255,0.2);
-}
-.catalog-item:hover .btn-wrapper{
-   display: block;
-  
+    border-radius: 5px;
 }
 
+.catalog-item:hover .btn-wrapper{
+   display: block;
+    z-index:1;
+
+}
+.catalog-item:hover .item-wrapper{
+   z-index: 20;
+
+}
 /*---------блок описание--------------*/
 
 .description{
@@ -1039,14 +1053,38 @@ body > input[type="radio"] {
     overflow: hidden;
     padding:17px 25px 19px 25px;
 }
-.subscribe input[type="email"]{
-    padding:9px 13px;
-    margin-right:14px;
+.subscribe .field-container{
+    
     flex-grow: 1;
-    line-height: 24px;
-    border:1px solid rgba(178,178,178,0.52);
-    border-radius: 5px;
+    margin-right: 14px;
 }
+
+    
+
+.subscribe input[type="email"]{
+       width: 100%;
+    box-sizing: border-box;
+    padding: 9px 13px;
+    line-height: 24px;
+    border: 1px solid rgba(178,178,178,0.52);
+    border-radius: 5px;
+    height: 44px;
+}
+
+.subscribe input:hover{
+    border:2px solid #c7c6c5;
+   
+}
+
+
+.subscribe input:focus
+{
+    border:2px solid rgba(46,136,228,0.52);
+   
+}
+
+
+
 .form-subscribe{
     margin-top: 35px;
     display: flex;
@@ -1595,10 +1633,15 @@ position: absolute;
     margin-right: 2.3%;
 }
 .btn-quickview{
+    position: absolute;
+    width: 80%;
+    left: 0;
+    right: 0;
+    bottom: 10.5px;
     box-sizing: border-box;
     min-height: 44px;
     padding: 10px 13px;
-    margin: 0 2px;
+    margin: 0 auto;
 }
 .catalog-block .catalog-item:nth-child(4n){
     margin-right: 0;
