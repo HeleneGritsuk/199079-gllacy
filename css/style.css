@@ -136,11 +136,8 @@ h3 {
 .navigation-block {
   margin-left: -5px;
   display: -webkit-box;
-  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
   display: -ms-flexbox;
-  /* TWEENER - IE 10 */
   display: -webkit-flex;
-  /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
   display: flex;
   margin-right: auto;
 }
@@ -1559,7 +1556,7 @@ body > input[type="radio"] {
   fill: #333333;
   fill-rule: evenodd;
 }
-select::-ms-expand {
+.select-list select::-ms-expand {
   display: none;
 }
 .select-list select {
