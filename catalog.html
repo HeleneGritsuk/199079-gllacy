@@ -40,7 +40,9 @@
     </symbol>
     <symbol id="marker" viewBox="0 0 7.781 5">
   <path d="M-0.007,-0.013 L7.795,-0.013 L3.952,5.012 L3.829,5.012 L-0.007,-0.013 Z" class="cls-1"/>
-    </symbol>      
+    </symbol>
+    <symbol id="paginleft" viewBox="0 0 8.281 13.72">
+        <path d="M8.267,1.410 L2.820,6.857 L8.260,12.297 L6.846,13.711 L-0.011,6.854 L1.403,5.440 L1.406,5.442 L6.853,-0.004 L8.267,1.410 Z" class="cls-1"/></symbol>
     </svg>
       <div class="container">
             <header class="row main-header">
@@ -379,11 +381,13 @@
                 <div class="pagination">
 
                     <ul>
+                        <li><svg class=""><use xlink:href="#paginleft"/></svg></li>
                         <li class="pagination-item-active"><span>1</span></li>
-                        <li><a class="page-number" href="#">2</a></li>
-                        <li><a class="page-number" href="#">3</a></li>
-                        <li><a class="page-number" href="#">4</a></li>
-                        <li><a class="page-number" href="#">5</a></li>
+                        <li class="page-number"><a href="#">2</a></li>
+                        <li class="page-number"><a href="#">3</a></li>
+                        <li class="page-number"><a href="#">4</a></li>
+                        <li class="page-number"><a href="#">5</a></li>
+                        <li><a href="#"><svg class="paginright"><use xlink:href="#paginleft"/></svg></a></li>
                     </ul>
 
                 </div>
@@ -391,7 +395,7 @@
 
             </div>
         </main>
-        <footer class="row main-footer">
+        <footer class="row main-footer main-footer-inner">
                   <section class="main-footer-social col-1">
                       <a href="#"><svg class="icon-social"><use xlink:href="#twitter"/></svg></a>
                       <a href="#"><svg class="icon-social"><use xlink:href="#insta"/></svg></a>
