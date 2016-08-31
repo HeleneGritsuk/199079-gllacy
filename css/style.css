@@ -1559,6 +1559,9 @@ body > input[type="radio"] {
   fill: #333333;
   fill-rule: evenodd;
 }
+select::-ms-expand {
+  display: none;
+}
 .select-list select {
   padding: 6px 16px 6px 12px;
   height: 36px;
@@ -1569,6 +1572,7 @@ body > input[type="radio"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  
   width: 100%;
   box-sizing: border-box;
   font-size: 16px;
