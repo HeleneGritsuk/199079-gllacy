@@ -423,68 +423,10 @@
 
   </div>
 
-  <script>
-    var link = document.querySelector(".link-feedback");
-
-    var popup = document.querySelector(".modal-content");
-    var overlay = document.querySelector(".modal-overlay");
-    var close = popup.querySelector(".modal-content-close");
 
 
-    link.addEventListener("click", function(event) {
-      event.preventDefault();
-      popup.classList.add("modal-content-show");
-      overlay.classList.add("modal-overlay-show");
-    });
-
-    close.addEventListener("click", function(event) {
-      event.preventDefault();
-      popup.classList.remove("modal-content-show");
-      overlay.classList.remove("modal-overlay-show");
-    });
-
-    overlay.addEventListener("click", function(event) {
-      event.preventDefault();
-      popup.classList.remove("modal-content-show");
-      overlay.classList.remove("modal-overlay-show");
-    });
-  </script>
-
-
-  <script type="text/javascript">
-    function initMap() {
-      var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 16,
-        center: {
-          lat: 59.939380,
-          lng: 30.328021
-        }
-      });
-
-      setMarkers(map);
-    }
-
-    function setMarkers(map) {
-      var image = {
-        url: 'img/pointer.png',
-        // This marker is 20 pixels wide by 32 pixels high.
-        size: new google.maps.Size(218, 142),
-        // The origin for this image is (0, 0).
-        origin: new google.maps.Point(0, 0),
-        // The anchor for this image is the base of the flagpole at (0, 32).
-        anchor: new google.maps.Point(40, 142)
-      };
-
-      var marker = new google.maps.Marker({
-        position: {
-          lat: 59.938579,
-          lng: 30.322954
-        },
-        map: map,
-        icon: image
-      });
-    }
-  </script>
+  <script src="js/popup.js"></script>
+  <script src="js/map.js"></script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJgIgVLopcrzB2-VEFmirPY_DiF58PJ3c&signed_in=true&callback=initMap"></script>
 
 </body>
