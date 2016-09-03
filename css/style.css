@@ -536,7 +536,6 @@ td:first-child {
   padding-right: 8px;
   width: 22px;
   box-sizing: border-box;
-  /* padding: 0 3px; */
 }
 
 td:nth-child(3) {
@@ -553,7 +552,6 @@ td:nth-child(2) {
 td:nth-child(4) {
   padding-top: 8px;
   padding-right: 24px;
-  /* width: 119px; */
   box-sizing: border-box;
 }
 
@@ -1457,8 +1455,6 @@ body > input[type="radio"] {
   font-size: 35px;
   line-height: 1;
   font-weight: 700;
-  /* margin-top: -2px; */
-
   margin-bottom: 28px;
 }
 .top-content {
@@ -1709,8 +1705,6 @@ body > input[type="radio"] {
   border-radius: 15px;
   background-color: rgba(168, 185, 175, 0.9);
   color: #fff;
-  /* padding: 12px 30px 8px 27px; */
-
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
@@ -1731,14 +1725,8 @@ body > input[type="radio"] {
 }
 .catalog-block {
   display: -webkit-box;
-  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-
   display: -ms-flexbox;
-  /* TWEENER - IE 10 */
-
   display: -webkit-flex;
-  /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 28px;
@@ -1770,14 +1758,8 @@ body > input[type="radio"] {
   padding-bottom: 14px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   display: -webkit-box;
-  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-
   display: -ms-flexbox;
-  /* TWEENER - IE 10 */
-
   display: -webkit-flex;
-  /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-
   display: flex;
   justify-content: flex-end;
 }
