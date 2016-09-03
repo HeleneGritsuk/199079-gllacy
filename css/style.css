@@ -258,11 +258,8 @@ h3 {
 .user-block {
   margin-top: 13px;
   display: -webkit-box;
-  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
   display: -ms-flexbox;
-  /* TWEENER - IE 10 */
   display: -webkit-flex;
-  /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
   display: flex;
   align-items: flex-start;
   font-weight: 500;
@@ -853,11 +850,8 @@ body > input[type="radio"] {
   margin: 0 auto;
   margin-left: 129px;
   display: -webkit-box;
-  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
   display: -ms-flexbox;
-  /* TWEENER - IE 10 */
   display: -webkit-flex;
-  /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
   display: flex;
 }
 
@@ -881,8 +875,6 @@ body > input[type="radio"] {
   text-align: left;
 }
 
-
-}
 .info-left b {
   font-weight: 700;
 }
@@ -946,6 +938,9 @@ body > input[type="radio"] {
   cursor: pointer;
   border-radius: 50%;
 }
+.toggle:hover {
+  border-width: 9px;
+}
 .min-toggle {
   left: 35px;
 }
@@ -956,14 +951,8 @@ body > input[type="radio"] {
 /*---------блок даром--------------*/
 .for-free {
   display: -webkit-box;
-  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-
   display: -ms-flexbox;
-  /* TWEENER - IE 10 */
-
   display: -webkit-flex;
-  /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -980,8 +969,8 @@ body > input[type="radio"] {
   margin-top: 0px;
   margin-bottom: 15px;
 }
-.raspberry {
-  background: url("../img/ruspberry.jpg") no-repeat;
+.raspberry { 
+  background: #6d1827 url("../img/ruspberry.jpg") no-repeat;
   background-size: cover;
   background-position: 50% 50%;
   border-radius: 16px;
@@ -992,7 +981,7 @@ body > input[type="radio"] {
   min-height: 230px;
 }
 .chocolate {
-  background: url("../img/choco-bg.jpg") no-repeat;
+  background: #41271c url("../img/choco-bg.jpg") no-repeat;
   background-size: cover;
   background-position: 50% 50%;
   border-radius: 16px;
@@ -1098,7 +1087,7 @@ body > input[type="radio"] {
 .description {
   padding: 10px 20px 1px 20px;
   color: #000;
-  background: url("../img/about-bg.jpg") no-repeat;
+  background: #ecdec1 url("../img/about-bg.jpg") no-repeat;
   background-size: cover;
   border-radius: 14px;
   overflow: hidden;
@@ -1118,14 +1107,8 @@ body > input[type="radio"] {
 }
 .description-columns {
   display: -webkit-box;
-  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-
   display: -ms-flexbox;
-  /* TWEENER - IE 10 */
-
   display: -webkit-flex;
-  /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -1135,14 +1118,8 @@ body > input[type="radio"] {
 .blog-subscribe {
   color: #000;
   display: -webkit-box;
-  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-
   display: -ms-flexbox;
-  /* TWEENER - IE 10 */
-
   display: -webkit-flex;
-  /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-
   display: flex;
   justify-content: space-between;
   margin-bottom: 40px;
@@ -1151,7 +1128,7 @@ body > input[type="radio"] {
   min-height: 220px;
   box-sizing: border-box;
   padding: 22px 19px;
-  background: url("../img/blog-bg.jpg") no-repeat;
+  background: #fff url("../img/blog-bg.jpg") no-repeat;
   background-size: cover;
   border-radius: 14px;
   overflow: hidden;
@@ -1177,7 +1154,7 @@ body > input[type="radio"] {
   min-height: 220px;
   box-sizing: border-box;
   color: #5a5a5a;
-  background: url("../img/subscribe-bg.jpg") no-repeat;
+  background: #f8f7f4 url("../img/subscribe-bg.jpg") no-repeat;
   background-size: 100% 100%;
   border-radius: 14px;
   overflow: hidden;
@@ -1207,14 +1184,8 @@ body > input[type="radio"] {
 .form-subscribe {
   margin-top: 35px;
   display: -webkit-box;
-  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-
   display: -ms-flexbox;
-  /* TWEENER - IE 10 */
-
   display: -webkit-flex;
-  /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-
   display: flex;
   align-items: center;
 }
@@ -1256,10 +1227,11 @@ body > input[type="radio"] {
   height: 429px;
   position: relative;
 }
-#map {
+.map {
   width: 100%;
   height: 429px;
   position: absolute;
+  background: url("../img/map.jpg") 50% 0% no-repeat;
 }
 .map-block .row {
   position: relative;
@@ -1318,6 +1290,7 @@ body > input[type="radio"] {
 }
 .modal-content-show {
   display: block;
+  animation: bounce 0.6s;
 }
 .modal-content h3 {
   margin-top: 0;
@@ -1356,13 +1329,8 @@ body > input[type="radio"] {
 }
 .modal-content-close::after {
   -webkit-transform: rotate(-45deg);
-  /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
-
   -ms-transform: rotate(-45deg);
-  /* IE 9 */
-
   transform: rotate(-45deg);
-  /* IE 10, Fx 16+, Op 12.1+ */
 }
 .feedback-form input[type="text"],
 .feedback-form input[type="email"] {
@@ -1402,12 +1370,10 @@ body > input[type="radio"] {
   font-weight: 400;
 }
 
-/* Firefox 19+ */
 :-moz-placeholder {
   font-weight: 400;
 }
 
-/* Firefox 18- */
 :-ms-input-placeholder {
   font-weight: 400;
 }
@@ -1468,6 +1434,20 @@ body > input[type="radio"] {
 }
 .order-list-item {
   border-radius: 50%;
+}
+@keyframes bounce {
+  0%   {
+    transform: translateY(-2000px);
+  }
+  70%  {
+    transform: translateY(30px);
+  }
+  90%  {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 /*---------catalog.html--------------*/
@@ -1856,4 +1836,9 @@ body > input[type="radio"] {
   color: #fff;
   text-decoration: none;
   display: block;
+}
+.page-feedback{
+  display: block;
+  margin: 0 auto;
+  position: static;
 }

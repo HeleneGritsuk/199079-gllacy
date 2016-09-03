@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=cyrillic-ext" rel="stylesheet">
 
   <title>HTML Academy: Глейси</title>
@@ -78,7 +78,7 @@
       <header class="main-header row">
         <nav class="navigation-block">
           <div class="logo">
-            <img src="img/Logo.svg" alt="Glassy Shop">
+            <img src="img/Logo.svg" alt="Glassy Shop" width="154" height="64">
           </div>
           <ul class="main-menu">
             <li class="main-li">
@@ -327,7 +327,7 @@
     </div>
 
     <section class="map-block">
-      <div id="map"></div>
+      <div class="map"></div>
 
       <div class="container">
         <div class="row">
@@ -338,7 +338,7 @@
             <p class="second-column-contacts">Для заказов по телефону:
               <b>8 812 450-25-25 </b><span>(с 10 до 20 ежедневно)</span></p>
 
-            <a class="btn link-feedback" href="#">Форма обратной связи</a>
+            <a class="btn link-feedback" href="feedback-form.html">Форма обратной связи</a>
 
           </section>
         </div>
@@ -399,17 +399,17 @@
     <!--Форма обратной связи -->
     <div class="modal-content">
       <h3 class="modal-content-title">Мы обязательно вам ответим!</h3>
-      <form class="feedback-form">
+      <form class="feedback-form" method="post">
         <div class="field-container">
-          <input type="text" class="field" required placeholder="Как вас зовут?">
+          <input type="text" class="field" name="login" required placeholder="Как вас зовут?">
           <label class="floating-label">Как вас зовут?</label>
         </div>
         <div class="field-container">
-          <input type="email" class="field" required placeholder="Ваша почта для ответа">
+          <input type="email" class="field" name="email" required placeholder="Ваша почта для ответа">
           <label class="floating-label">Ваша почта для ответа</label>
         </div>
         <div class="field-container">
-          <textarea class="field" required placeholder="Напишите что-нибудь..."></textarea>
+          <textarea class="field" name="text" required placeholder="Напишите что-нибудь..."></textarea>
           <label class="floating-label">Напишите что-нибудь...</label>
         </div>
         <div class="btn-align">
@@ -425,8 +425,8 @@
 
 
 
-  <script src="js/popup.js"></script>
-  <script src="js/map.js"></script>
+  <script src="js/popup.min.js"></script>
+  <script src="js/map.min.js"></script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJgIgVLopcrzB2-VEFmirPY_DiF58PJ3c&signed_in=true&callback=initMap"></script>
 
 </body>
